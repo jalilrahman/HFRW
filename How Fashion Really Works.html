@@ -1,0 +1,483 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>How Fashion Really Works</title>
+<meta name="description" content="Build the commercial fluency to lead in fashion and luxury. 14 core modules, a 12-week programme and direct mentoring from a fashion CCO.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: an editorial lookbook column with a range-plan "line sheet" for the programme; swing-tag details carry the fashion vernacular */
+:root{
+  --bone:#ECE9E3; --paper:#F6F4F0; --ink:#172238; --ink-soft:#4A5468; --rule:#CFC9BE; --gold:#9C7A43; --on-ink:#F3EFE7;
+  --display:"Bodoni Moda", "Didot", Georgia, serif;
+  --body:"Instrument Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --wrap:1120px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bone:#0F1420; --paper:#161C2A; --ink:#ECE6DA; --ink-soft:#A8AFBF; --rule:#2D3548; --gold:#CBA56A; --on-ink:#0F1420; color-scheme:dark}}
+:root[data-theme="dark"]{--bone:#0F1420; --paper:#161C2A; --ink:#ECE6DA; --ink-soft:#A8AFBF; --rule:#2D3548; --gold:#CBA56A; --on-ink:#0F1420; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--bone);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.08;text-wrap:balance;margin:0}
+h1{font-size:clamp(2.4rem,5.6vw,4.4rem);letter-spacing:-.01em}
+h2{font-size:clamp(2rem,4vw,3rem)}
+h3{font-size:1.5rem}
+p{margin:0}
+a{color:inherit}
+.label{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.lead{font-size:1.18rem;color:var(--ink-soft);max-width:60ch}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+.btn{display:inline-flex;align-items:center;gap:.6em;background:var(--ink);color:var(--on-ink);border:1px solid var(--ink);font:500 1rem var(--body);padding:.95em 1.6em;cursor:pointer;text-decoration:none;transition:background .2s,color .2s}
+.btn:hover{background:transparent;color:var(--ink)}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--on-ink)}
+.fine{font-family:var(--mono);font-size:.78rem;color:var(--ink-soft);letter-spacing:.02em}
+
+/* ticker */
+.ticker{background:var(--ink);color:var(--on-ink);font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase}
+.ticker .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:.4em 2.2em;padding-block:.7em}
+.ticker span::before{content:"◆";color:var(--gold);margin-right:.8em;font-size:.6em;vertical-align:.2em}
+
+/* nav */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bone) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.logo{font-family:var(--display);font-size:1.5rem;text-decoration:none;letter-spacing:.06em}
+.navlinks{display:flex;align-items:center;gap:28px;font-size:.95rem}
+.navlinks a:not(.btn){text-decoration:none;color:var(--ink-soft)}
+.navlinks a:not(.btn):hover{color:var(--ink)}
+.navlinks .btn{padding:.6em 1.1em;font-size:.9rem}
+@media (max-width:640px){.navlinks a:not(.btn){display:none}}
+
+section{padding-block:clamp(64px,9vw,120px);border-bottom:1px solid var(--rule)}
+
+/* hero */
+.hero{padding-block:clamp(48px,7vw,96px)}
+.hero-grid{display:grid;grid-template-columns:1.25fr .9fr;gap:clamp(32px,5vw,72px);align-items:center}
+.hero-grid>*{min-width:0}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero-copy{display:grid;gap:26px}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
+.proof{display:flex;align-items:center;gap:10px;font-size:.95rem;color:var(--ink-soft)}
+.proof b{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
+.tag{position:relative;background:var(--paper);border:1px solid var(--rule);padding:28px 26px 26px;display:grid;gap:18px}
+.tag::before{content:"";position:absolute;top:18px;left:50%;width:14px;height:14px;margin-left:-7px;border-radius:50%;border:1px solid var(--rule);background:var(--bone)}
+.video{display:grid;place-items:center;aspect-ratio:16/10;max-width:100%;margin-top:18px;background:var(--ink);color:var(--on-ink);text-decoration:none;position:relative;overflow:hidden}
+.video span{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;border:1px solid var(--gold);color:var(--gold);font-size:1.3rem;transition:transform .25s}
+.video:hover span{transform:scale(1.08)}
+.video small{position:absolute;bottom:12px;left:14px;font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;opacity:.75}
+.tag dl{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;margin:0;font-size:.92rem}
+.tag dt{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);padding-top:.2em}
+.tag dd{margin:0;font-variant-numeric:tabular-nums}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}}
+
+/* thesis */
+.thesis{background:var(--ink);color:var(--on-ink);border:0}
+.thesis .label{color:var(--gold)}
+.thesis-grid{display:grid;gap:40px}
+.roles{display:flex;flex-wrap:wrap;gap:10px}
+.roles span{border:1px solid color-mix(in srgb,var(--on-ink) 30%,transparent);padding:.45em .9em;font-size:.92rem}
+.thesis h2{font-size:clamp(2.2rem,5vw,3.8rem);max-width:18ch}
+.thesis p{max-width:62ch;font-size:1.12rem;opacity:.85}
+
+/* mentor */
+.mentor-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(32px,5vw,72px)}
+.mentor-grid>*{min-width:0}
+.portrait{aspect-ratio:4/5;max-width:100%;background:var(--paper);border:1px solid var(--rule);display:grid;place-items:center;font-family:var(--display);font-size:5rem;color:var(--rule)}
+.mentor-copy{display:grid;gap:22px;align-content:start}
+.mentor-copy p{color:var(--ink-soft);max-width:62ch}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.stats div{padding:18px 16px 18px 0;display:grid;gap:4px}
+.stats div+div{padding-left:16px;border-left:1px solid var(--rule)}
+.stats b{font-family:var(--display);font-weight:400;font-size:2.6rem;line-height:1;font-variant-numeric:tabular-nums}
+.stats span{font-size:.85rem;color:var(--ink-soft)}
+.path{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.path li{display:grid;grid-template-columns:1fr auto;gap:16px;padding:12px 0;border-bottom:1px dashed var(--rule)}
+.path li span:last-child{font-family:var(--mono);font-size:.78rem;color:var(--ink-soft);letter-spacing:.04em;text-align:right}
+.path li.now span:first-child{font-weight:600}
+@media (max-width:860px){.mentor-grid{grid-template-columns:1fr}.portrait{max-width:360px}}
+
+/* programme */
+.head{display:grid;gap:16px;margin-bottom:48px}
+.stages{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.stages>*{min-width:0}
+.sheet{background:var(--paper);border:1px solid var(--rule)}
+.sheet header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:20px 22px;border-bottom:1px solid var(--ink)}
+.sheet header h3{font-size:1.6rem}
+.sheet header .label{white-space:nowrap}
+.sheet ol{list-style:none;margin:0;padding:0}
+.sheet li{display:grid;grid-template-columns:3.2em 1fr;gap:12px;padding:13px 22px;border-bottom:1px solid var(--rule);align-items:baseline}
+.sheet li:last-child{border-bottom:0}
+.sheet li code{font-family:var(--mono);font-size:.74rem;color:var(--gold);letter-spacing:.05em}
+.sheet .note{padding:16px 22px;font-size:.9rem;color:var(--ink-soft);border-top:1px solid var(--rule)}
+@media (max-width:860px){.stages{grid-template-columns:1fr}}
+.included{margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--rule)}
+.included div{padding:22px 22px 22px 0;border-bottom:1px solid var(--rule);display:grid;gap:6px}
+.included b{font-weight:600}
+.included span{color:var(--ink-soft);font-size:.95rem}
+@media (max-width:860px){.included{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.included{grid-template-columns:1fr}}
+.mechanics{margin-top:56px;font-family:var(--display);font-size:clamp(1.5rem,3vw,2.2rem);font-style:italic;max-width:30ch;line-height:1.25}
+
+/* stories */
+.stories{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.stories>*{min-width:0}
+.story{border-top:2px solid var(--ink);padding-top:20px;display:grid;gap:16px;align-content:start}
+.story blockquote{margin:0;font-family:var(--display);font-size:1.25rem;line-height:1.35}
+.move{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:.88rem}
+.move .label{color:var(--ink-soft)}
+.move b{font-weight:600}
+.story footer{font-size:.88rem;color:var(--ink-soft)}
+.placeholder{opacity:.55}
+@media (max-width:860px){.stories{grid-template-columns:1fr}}
+
+/* fit */
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.fit>*{min-width:0}
+.fit div{background:var(--paper);border:1px solid var(--rule);padding:28px}
+.fit h3{margin-bottom:18px}
+.fit ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.fit li{display:grid;grid-template-columns:1.4em 1fr;gap:8px}
+.fit li::before{font-family:var(--mono);color:var(--gold)}
+.yes li::before{content:"+"}
+.no li::before{content:"–";color:var(--ink-soft)}
+@media (max-width:760px){.fit{grid-template-columns:1fr}}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:clamp(32px,5vw,72px)}
+.faq-grid>*{min-width:0}
+details{border-bottom:1px solid var(--rule)}
+details:first-child{border-top:1px solid var(--rule)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;padding:20px 0;font-weight:500;font-size:1.05rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--mono);color:var(--gold);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details .a{padding:0 0 22px;color:var(--ink-soft);display:grid;gap:12px;max-width:62ch}
+details ul{margin:0;padding-left:1.1em;display:grid;gap:4px}
+@media (max-width:860px){.faq-grid{grid-template-columns:1fr}}
+
+/* final */
+.final{text-align:center;border-bottom:0}
+.final .wrap{display:grid;gap:24px;justify-items:center}
+.final h2{font-size:clamp(2.4rem,5.4vw,4.2rem);max-width:16ch}
+.final p{color:var(--ink-soft)}
+footer.site{padding-block:32px;border-top:1px solid var(--rule)}
+footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+/* modal */
+.overlay{position:fixed;inset:0;z-index:50;background:color-mix(in srgb,var(--ink) 55%,transparent);display:grid;place-items:center;padding:16px}
+.modal{background:var(--bone);color:var(--ink);width:min(620px,100%);max-height:calc(100dvh - 32px);overflow:auto;border:1px solid var(--rule);padding:clamp(24px,4vw,40px);position:relative;display:grid;gap:22px}
+.close{position:absolute;top:12px;right:14px;background:none;border:0;font-size:1.6rem;color:var(--ink-soft);cursor:pointer;line-height:1}
+.progress{height:2px;background:var(--rule)}
+.progress i{display:block;height:100%;background:var(--gold);transition:width .3s}
+.opts{display:grid;gap:10px}
+.opts button{text-align:left;background:var(--paper);border:1px solid var(--rule);color:var(--ink);font:inherit;font-size:1rem;padding:14px 16px;cursor:pointer;transition:border-color .15s}
+.opts button:hover{border-color:var(--ink)}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fields label{display:grid;gap:6px;font-size:.85rem;color:var(--ink-soft)}
+.fields label.full{grid-column:1/-1}
+.fields input{font:inherit;font-size:1rem;color:var(--ink);background:var(--paper);border:1px solid var(--rule);padding:11px 12px;width:100%}
+.fields input:focus{border-color:var(--ink);outline:none}
+@media (max-width:520px){.fields{grid-template-columns:1fr}}
+.row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px}
+.linkbtn{background:none;border:0;color:var(--ink-soft);font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.err{color:#B3412E;font-size:.9rem}
+</style>
+
+<div class="ticker"><div class="wrap">
+  <span>Founding applications now open</span>
+  <span>14 core modules · 12-week programme</span>
+  <span>Direct mentoring from a sitting CCO</span>
+</div></div>
+
+<nav><div class="wrap">
+  <a class="logo" href="#top">HFRW</a>
+  <div class="navlinks">
+    <a href="#programme">How it works</a>
+    <a href="#faq">FAQs</a>
+    <a class="btn" href="#apply" data-apply>Apply to join</a>
+  </div>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap hero-grid">
+  <div class="hero-copy">
+    <span class="label">How Fashion Really Works</span>
+    <h1>Be the exec in the room, <em>not the one taking notes.</em></h1>
+    <p class="lead">Build the commercial fluency to lead in fashion and luxury. You get 14 core modules, a 12-week programme and direct mentoring from a fashion Chief Commercial Officer.</p>
+    <div class="cta-row">
+      <a class="btn" href="#apply" data-apply>Apply to join HFRW <span aria-hidden="true">→</span></a>
+      <span class="proof"><b>63</b> fashion and luxury professionals already inside</span>
+    </div>
+  </div>
+  <aside class="tag" aria-label="Programme overview">
+    <a class="video" id="videoLink" href="#" target="_blank" rel="noopener">
+      <span aria-hidden="true">▶</span>
+      <small>Watch the 2-minute overview · sound on</small>
+    </a>
+    <dl>
+      <dt>Foundations</dt><dd>14 core modules, self-paced</dd>
+      <dt>Programme</dt><dd>12 weeks, one theme a week</dd>
+      <dt>Live</dt><dd>Weekly seminars + mentoring</dd>
+      <dt>Time</dt><dd>Around 3–5 hours a week</dd>
+      <dt>Price</dt><dd>$49 a month · cancel any time</dd>
+    </dl>
+  </aside>
+</div></header>
+
+<section class="thesis"><div class="wrap thesis-grid">
+  <span class="label">Whatever your goal</span>
+  <div class="roles" aria-label="Roles HFRW prepares you for">
+    <span>Buyer</span><span>Merchandiser</span><span>Marketer</span><span>Product developer</span><span>Ecommerce specialist</span><span>Licensing manager</span><span>Commercial director</span><span>Founder</span><span>Future CEO</span>
+  </div>
+  <h2>You must understand how fashion businesses actually work.</h2>
+  <p>The most valuable people in any organisation rarely understand only their own department. They understand how the moving parts connect. HFRW teaches the whole system, not one function.</p>
+</div></section>
+
+<section id="mentor"><div class="wrap mentor-grid">
+  <div class="portrait" role="img" aria-label="Portrait of Jalil Rahman (photo to add)">JR</div>
+  <div class="mentor-copy">
+    <span class="label">Meet your mentor</span>
+    <h2>Jalil Rahman</h2>
+    <p>Jalil has spent 23 years in senior commercial roles across luxury and premium fashion, from Richemont and Burberry to Vertu, Savile Row and Liberty London. Today he is a Chief Commercial Officer, responsible for the commercial strategy of a British fashion brand.</p>
+    <p>He has also been the founder. His men's footwear brand, Augustus Pili, won the British Footwear Association Young Designer of the Year award, and it taught him exactly what commercial mistakes cost.</p>
+    <p>Everything HFRW teaches is what he uses at work: reading the P&amp;L, making the range and pricing call, and getting a recommendation through an executive meeting.</p>
+    <div class="stats">
+      <div><b>23</b><span>years in fashion commercial</span></div>
+      <div><b>7</b><span>brands, luxury to mass market</span></div>
+      <div><b>1</b><span>BFA award as a founder</span></div>
+    </div>
+    <ol class="path" aria-label="Career path">
+      <li><span>Richemont</span><span>Luxury group</span></li>
+      <li><span>Burberry</span><span>Luxury</span></li>
+      <li><span>Vertu</span><span>Luxury</span></li>
+      <li><span>Savile Row</span><span>Tailoring</span></li>
+      <li><span>Liberty London</span><span>Retail</span></li>
+      <li><span>Augustus Pili</span><span>Founder</span></li>
+      <li class="now"><span>Chief Commercial Officer</span><span>Current role</span></li>
+      <li class="now"><span>How Fashion Really Works</span><span>Founder &amp; lead mentor</span></li>
+    </ol>
+  </div>
+</div></section>
+
+<section id="programme"><div class="wrap">
+  <div class="head">
+    <span class="label">How it works</span>
+    <h2>Not a course on trends. The mechanics beneath them.</h2>
+    <p class="lead">Two stages. First you learn how the system works. Then you study it in action across real brands and real commercial decisions.</p>
+  </div>
+  <div class="stages">
+    <article class="sheet">
+      <header><h3>The Foundations</h3><span class="label">Stage 1 · 14 modules</span></header>
+      <ol>
+        <li><code>F·01</code><span>How brands create value</span></li>
+        <li><code>F·02</code><span>How pricing protects profitability</span></li>
+        <li><code>F·03</code><span>How products move through supply chains</span></li>
+        <li><code>F·04</code><span>How wholesale and distribution shape growth</span></li>
+        <li><code>F·05</code><span>How licensing creates new revenue streams</span></li>
+        <li><code>F·06</code><span>How organisations scale</span></li>
+        <li><code>F·07</code><span>How executives make decisions</span></li>
+      </ol>
+      <p class="note">Self-paced. These form the foundation for everything that follows.</p>
+    </article>
+    <article class="sheet">
+      <header><h3>The Programme</h3><span class="label">Stage 2 · 12 weeks</span></header>
+      <ol>
+        <li><code>P·01</code><span>Why customers buy</span></li>
+        <li><code>P·02</code><span>How brands build relevance</span></li>
+        <li><code>P·03</code><span>How products are commercialised</span></li>
+        <li><code>P·04</code><span>How distribution creates competitive advantage</span></li>
+        <li><code>P·05</code><span>How culture influences demand</span></li>
+        <li><code>P·06</code><span>How organisations grow</span></li>
+        <li><code>P·07</code><span>How leaders navigate uncertainty</span></li>
+      </ol>
+      <p class="note">One theme a week, studied through the industry's most important brands, with a practical task you can submit for feedback.</p>
+    </article>
+  </div>
+  <div class="included">
+    <div><b>Weekly live seminars</b><span>Real industry decisions, numbers and trade-offs.</span></div>
+    <div><b>Direct mentoring</b><span>Bring a real work problem and get an answer from inside the industry.</span></div>
+    <div><b>Frameworks and templates</b><span>OTB, range plans, pricing, business cases and exec decks from seven brands.</span></div>
+    <div><b>AI, used properly</b><span>Let AI do the analysis while you keep the judgement.</span></div>
+    <div><b>Seminar library</b><span>Brand case studies, the psychology of demand, cultural capital and more.</span></div>
+    <div><b>A community</b><span>Future fashion execs on the same path as you.</span></div>
+  </div>
+  <p class="mechanics">The goal is to make you commercially literate: someone who thinks critically, decides well and creates real value wherever they work.</p>
+  <div class="cta-row" style="margin-top:36px"><a class="btn" href="#apply" data-apply>Apply to join HFRW <span aria-hidden="true">→</span></a></div>
+</div></section>
+
+<section id="stories"><div class="wrap">
+  <div class="head">
+    <span class="label">Member stories</span>
+    <h2>See what changed for people like you.</h2>
+    <p class="lead">Where they started, what HFRW gave them, and where they are now.</p>
+  </div>
+  <div class="stories">
+    <article class="story placeholder">
+      <blockquote>“[One sentence on the skill they gained. One sentence on what it changed at work.]”</blockquote>
+      <div class="move"><span class="label">Started</span><b>[Senior Buyer]</b><span aria-hidden="true">→</span><span class="label">Now</span><b>[Head of Buying]</b></div>
+      <footer>[Name] · [Company]</footer>
+    </article>
+    <article class="story placeholder">
+      <blockquote>“[Member quote, with permission.]”</blockquote>
+      <div class="move"><span class="label">Started</span><b>[Merchandise Manager]</b><span aria-hidden="true">→</span><span class="label">Now</span><b>[Head of Merchandising]</b></div>
+      <footer>[Name] · [Company]</footer>
+    </article>
+    <article class="story placeholder">
+      <blockquote>“[Member quote, with permission.]”</blockquote>
+      <div class="move"><span class="label">Started</span><b>[Wholesale Manager]</b><span aria-hidden="true">→</span><span class="label">Now</span><b>[Commercial Director]</b></div>
+      <footer>[Name] · [Company]</footer>
+    </article>
+  </div>
+</div></section>
+
+<section id="fit"><div class="wrap">
+  <div class="head"><span class="label">Fit</span><h2>Is HFRW right for you?</h2></div>
+  <div class="fit">
+    <div class="yes"><h3>HFRW is for you if</h3><ul>
+      <li>You work, or want to work, on the commercial side of fashion: buying, merchandising, marketing, product, ecommerce, licensing, wholesale, retail, or as a founder</li>
+      <li>You run your own area well but want to understand how the whole business works</li>
+      <li>You want Head of, Director or beyond within the next one to three years</li>
+      <li>You'll apply what you learn at work and act on feedback</li>
+    </ul></div>
+    <div class="no"><h3>HFRW is not for you if</h3><ul>
+      <li>You only want a certificate or passive video content</li>
+      <li>You expect a guaranteed promotion or title</li>
+      <li>You're after design or creative training. HFRW covers the commercial side</li>
+      <li>You won't practise or use it on real work</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap faq-grid">
+  <div class="head"><span class="label">FAQs</span><h2>Frequently asked questions</h2></div>
+  <div>
+    <details open><summary>What is How Fashion Really Works?</summary><div class="a"><p>HFRW builds the commercial fluency you need to succeed in the modern fashion industry. It starts with 14 core modules, then moves into a structured 12-week programme, with live seminars and direct mentoring from a working CCO alongside.</p></div></details>
+    <details><summary>Who is it for?</summary><div class="a"><p>It's for ambitious professionals on the commercial side of fashion and luxury: buyers, merchandisers, marketers, product developers, ecommerce, licensing and wholesale teams, and founders. Most members are managers working towards Head of or Director.</p></div></details>
+    <details><summary>What will I learn?</summary><div class="a"><p>You'll learn how the whole system works, not just one function. The 14 core modules cover how brands create value, how pricing protects profitability, supply chains, wholesale and distribution, licensing, how organisations scale, and how executives make decisions.</p><p>The 12-week programme then puts those foundations to work: why customers buy, how culture drives demand and how leaders navigate uncertainty. It also shows you how to use AI for analysis without outsourcing the decision.</p></div></details>
+    <details><summary>How is the programme structured?</summary><div class="a"><p>There are two stages. First come the 14 self-paced core modules. Then the 12-week programme takes one theme a week: you study major brands, analyse real commercial decisions and complete a practical task you can submit for feedback.</p></div></details>
+    <details><summary>Is it recorded or live?</summary><div class="a"><p>Both. The modules and seminar library are recorded, so you can fit them around your job. The weekly live seminars and mentoring are where you ask questions and bring real problems.</p></div></details>
+    <details><summary>Do I get direct access to Jalil?</summary><div class="a"><p>Yes. Mentoring is built in from day one. Use it for a programme task, a problem at work or your next career move.</p></div></details>
+    <details><summary>Do I need a finance background?</summary><div class="a"><p>No. Everything is built step by step from where most fashion professionals start. You do need to do the exercises.</p></div></details>
+    <details><summary>Is this an MBA alternative?</summary><div class="a"><p>For fashion, yes. An MBA teaches general business over two years and costs tens of thousands. HFRW teaches the commercial decisions specific to fashion and luxury, from a working CCO, for $49 a month.</p></div></details>
+    <details><summary>Will it get me promoted?</summary><div class="a"><p>It gives you the skills, the evidence and the confidence to go after a promotion. It can't guarantee one. That depends on your starting point, your effort and the openings around you.</p></div></details>
+    <details><summary>Can I start any time, and cancel?</summary><div class="a"><p>Yes. You can start the core modules the day you join, and membership is monthly, so you can cancel any time.</p></div></details>
+  </div>
+</div></section>
+
+<section class="final"><div class="wrap">
+  <span class="label">Applications reviewed on a rolling basis</span>
+  <h2>Understand how fashion really works. Then lead it.</h2>
+  <p>Think critically. Decide better. Communicate with confidence.</p>
+  <a class="btn" href="#apply" data-apply>Apply to join HFRW <span aria-hidden="true">→</span></a>
+</div></section>
+
+<footer class="site"><div class="wrap fine">
+  <span>© 2026 How Fashion Really Works</span>
+  <span>Hosted on Skool · $49 a month</span>
+</div></footer>
+
+<div class="overlay" id="overlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="close" id="closeBtn" aria-label="Close">×</button>
+    <div id="mBody"></div>
+  </div>
+</div>
+
+<script>
+/* ---------- EDIT THESE ---------- */
+var CONFIG = {
+  skoolUrl: "https://www.skool.com/how-fashion-really-works/about",
+  videoUrl: "",            // paste your YouTube link here
+  formEndpoint: "",        // optional: a Formspree (or similar) URL to receive applications
+  leadMagnetUrl: ""        // link to "The 10 Commercial Decisions" guide
+};
+/* -------------------------------- */
+
+var QUESTIONS = [
+  {k:"role", q:"What's your role?", o:["Buyer","Merchandiser","Product","Brand / Marketing","Ecommerce","Wholesale / Licensing","Retail / Store ops","Founder","Other"]},
+  {k:"years", q:"How long have you worked in fashion or luxury?", o:["Under 3 years","3–5 years","6–10 years","10+ years"]},
+  {k:"level", q:"What's your level?", o:["Assistant / Coordinator","Manager","Senior Manager","Head of or above"]},
+  {k:"goal", q:"What's your next step in the next 12–24 months?", o:["Head of","Director","Move into luxury","Launch or grow my own brand"]},
+  {k:"gap", q:"What's holding you back most?", o:["The numbers and P&L","Strategy","Presenting to executives","Getting noticed"]},
+  {k:"time", q:"How much time can you give each week?", o:["Under 1 hour","1–3 hours","3–5 hours","5+ hours"]}
+];
+var answers = {}, step = 0;
+var overlay = document.getElementById("overlay"), body = document.getElementById("mBody");
+
+var v = document.getElementById("videoLink");
+if (CONFIG.videoUrl) v.href = CONFIG.videoUrl; else v.addEventListener("click", function(e){ e.preventDefault(); });
+
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function bar(n){return '<div class="progress"><i style="width:'+Math.round(n/(QUESTIONS.length+1)*100)+'%"></i></div>';}
+
+function intro(){
+  body.innerHTML = '<span class="label">Application</span><h2 id="mTitle" style="font-size:2rem">Apply to join How Fashion Really Works</h2>'+
+  '<p class="lead" style="font-size:1rem">Six short questions on where you are and where you want to go, so we can check HFRW is right for you. Please answer honestly. It takes under two minutes.</p>'+
+  '<div><button class="btn" id="start">Start your application →</button></div>';
+  document.getElementById("start").onclick = function(){ step = 0; question(); };
+}
+function question(){
+  var Q = QUESTIONS[step];
+  body.innerHTML = bar(step+1)+'<span class="label">Question '+(step+1)+' of '+QUESTIONS.length+'</span><h3 id="mTitle">'+esc(Q.q)+'</h3>'+
+  '<div class="opts">'+Q.o.map(function(o,i){return '<button data-i="'+i+'">'+esc(o)+'</button>';}).join("")+'</div>'+
+  (step>0?'<div><button class="linkbtn" id="back">← Back</button></div>':'');
+  body.querySelectorAll(".opts button").forEach(function(b){
+    b.onclick = function(){ answers[Q.k] = Q.o[+b.dataset.i]; step++; step < QUESTIONS.length ? question() : contact(); };
+  });
+  var bk = document.getElementById("back"); if (bk) bk.onclick = function(){ step--; question(); };
+  var first = body.querySelector(".opts button"); if (first) first.focus();
+}
+function contact(){
+  body.innerHTML = bar(QUESTIONS.length+1)+'<span class="label">Final step</span><h3 id="mTitle">Your application is almost complete</h3>'+
+  '<form id="cform" novalidate><div class="fields">'+
+  '<label>First name<input id="f_first" required autocomplete="given-name"></label>'+
+  '<label>Last name<input id="f_last" required autocomplete="family-name"></label>'+
+  '<label class="full">Email address<input id="f_email" type="email" required autocomplete="email"></label>'+
+  '<label>Country<input id="f_country" required autocomplete="country-name"></label>'+
+  '<label>Current employer (optional)<input id="f_employer" autocomplete="organization"></label>'+
+  '<label class="full">LinkedIn profile (optional)<input id="f_linkedin" type="url"></label>'+
+  '</div><p class="err" id="ferr" hidden></p>'+
+  '<div class="row" style="margin-top:20px"><button type="button" class="linkbtn" id="back">← Back</button><button class="btn" type="submit">Submit my application</button></div></form>';
+  document.getElementById("back").onclick = function(){ step = QUESTIONS.length-1; question(); };
+  document.getElementById("cform").onsubmit = function(e){
+    e.preventDefault();
+    var g = function(id){return document.getElementById(id).value.trim();};
+    var err = document.getElementById("ferr");
+    if (!g("f_first") || !g("f_last") || !g("f_country") || !/^\S+@\S+\.\S+$/.test(g("f_email"))) {
+      err.textContent = "Please add your name, country and a valid email address."; err.hidden = false; return;
+    }
+    var data = Object.assign({}, answers, {first:g("f_first"), last:g("f_last"), email:g("f_email"), country:g("f_country"), employer:g("f_employer"), linkedin:g("f_linkedin")});
+    if (CONFIG.formEndpoint) {
+      try { fetch(CONFIG.formEndpoint, {method:"POST", headers:{"Content-Type":"application/json","Accept":"application/json"}, body:JSON.stringify(data)}).catch(function(){}); } catch(x){}
+    }
+    result(data);
+  };
+}
+function isFit(a){ return a.years !== "Under 3 years" && a.time !== "Under 1 hour"; }
+function result(a){
+  if (isFit(a)) {
+    body.innerHTML = '<span class="label">Application received</span><h2 id="mTitle" style="font-size:2rem">You look like a strong fit, '+esc(a.first)+'.</h2>'+
+    '<p class="lead" style="font-size:1rem">Based on your answers, HFRW fits where you are and where you want to go. The final step is to join on Skool, where the modules, seminars and mentoring live.</p>'+
+    '<div><a class="btn" href="'+esc(CONFIG.skoolUrl)+'" target="_blank" rel="noopener">Complete my membership on Skool · $49 a month →</a></div>'+
+    '<p class="fine">Monthly membership. Cancel any time.</p>';
+  } else {
+    body.innerHTML = '<span class="label">Thank you</span><h2 id="mTitle" style="font-size:2rem">Thank you for applying, '+esc(a.first)+'.</h2>'+
+    '<p class="lead" style="font-size:1rem">HFRW works best when you can give it a little more time, or are a little further into your career. In the meantime, start building commercial judgement with the free guide.</p>'+
+    (CONFIG.leadMagnetUrl ? '<div><a class="btn" href="'+esc(CONFIG.leadMagnetUrl)+'" target="_blank" rel="noopener">Get "The 10 Commercial Decisions" →</a></div>' : '')+
+    '<div><a class="linkbtn" href="'+esc(CONFIG.skoolUrl)+'" target="_blank" rel="noopener">Join on Skool anyway</a></div>';
+  }
+}
+var lastFocus = null;
+function open(e){ if (e) e.preventDefault(); lastFocus = document.activeElement; answers = {}; intro(); overlay.hidden = false; document.getElementById("start").focus(); }
+function close(){ overlay.hidden = true; if (lastFocus) lastFocus.focus(); }
+document.querySelectorAll("[data-apply]").forEach(function(a){ a.addEventListener("click", open); });
+document.getElementById("closeBtn").onclick = close;
+overlay.addEventListener("click", function(e){ if (e.target === overlay) close(); });
+document.addEventListener("keydown", function(e){ if (e.key === "Escape" && !overlay.hidden) close(); });
+</script>
+
+</body></html>
