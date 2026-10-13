@@ -3,23 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>How Fashion Really Works</title>
-<meta name="description" content="Build the commercial fluency to lead in fashion and luxury. A 12-week programme, up to 3 hours a week, with direct mentoring from a fashion CCO.">
+<title>How Fashion Really Works | Become leadership-ready in fashion in 12 weeks</title>
+<meta name="description" content="Become leadership-ready in fashion in 12 weeks. A practical programme in how fashion businesses really work, with direct mentoring from a sitting Chief Commercial Officer. Up to 3 hours a week.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
 /* Layout: an editorial lookbook column with a range-plan "line sheet" for the programme; swing-tag details carry the fashion vernacular */
 :root{
-  --bone:#ECE9E3; --paper:#F6F4F0; --ink:#172238; --ink-soft:#4A5468; --rule:#CFC9BE; --gold:#9C7A43; --on-ink:#F3EFE7;
+  --bone:#F8F6F1; --paper:#FFFFFF; --ink:#0B1330; --ink-soft:#343C52; --rule:#D9D3C7; --gold:#1E3BD6; --on-ink:#FFFFFF; --on-accent:#FFFFFF; --pop:#F5B921; --on-pop:#0B1330; --hero:#1E3BD6; --on-hero:#FFFFFF; --deep:#0B1330; --on-deep:#FFFFFF;
   --display:"DM Serif Display", Georgia, "Times New Roman", serif;
   --body:"Instrument Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
   --wrap:1120px;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bone:#0F1420; --paper:#161C2A; --ink:#ECE6DA; --ink-soft:#A8AFBF; --rule:#2D3548; --gold:#CBA56A; --on-ink:#0F1420; color-scheme:dark}}
-:root[data-theme="dark"]{--bone:#0F1420; --paper:#161C2A; --ink:#ECE6DA; --ink-soft:#A8AFBF; --rule:#2D3548; --gold:#CBA56A; --on-ink:#0F1420; color-scheme:dark}
+  --bone:#0A1022; --paper:#121A33; --ink:#F3F0E9; --ink-soft:#C3C9D8; --rule:#283152; --gold:#8CA0FF; --on-ink:#0A1022; --on-accent:#0A1022; --pop:#F7C43E; --on-pop:#0B1330; --hero:#1A2FA8; --on-hero:#FFFFFF; --deep:#050916; --on-deep:#FFFFFF; color-scheme:dark}}
+:root[data-theme="dark"]{--bone:#0A1022; --paper:#121A33; --ink:#F3F0E9; --ink-soft:#C3C9D8; --rule:#283152; --gold:#8CA0FF; --on-ink:#0A1022; --on-accent:#0A1022; --pop:#F7C43E; --on-pop:#0B1330; --hero:#1A2FA8; --on-hero:#FFFFFF; --deep:#050916; --on-deep:#FFFFFF; color-scheme:dark}
 
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -35,20 +35,20 @@ h2{font-size:clamp(2rem,4vw,3rem)}
 h3{font-size:1.5rem}
 p{margin:0}
 a{color:inherit}
-.label{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
-.lead{font-size:1.18rem;color:var(--ink-soft);max-width:60ch}
+.label{font-family:var(--mono);font-size:.76rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.lead{font-size:1.2rem;color:var(--ink-soft);max-width:60ch}
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 
-.btn{display:inline-flex;align-items:center;gap:.6em;background:var(--ink);color:var(--on-ink);border:1px solid var(--ink);font:500 1rem var(--body);padding:.95em 1.6em;cursor:pointer;text-decoration:none;transition:background .2s,color .2s}
-.btn:hover{background:transparent;color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:.6em;background:var(--gold);color:var(--on-accent);border:2px solid var(--gold);font:600 1rem var(--body);padding:.95em 1.6em;cursor:pointer;text-decoration:none;transition:background .2s,color .2s}
+.btn:hover{background:transparent;color:var(--gold)}
 .btn-ghost{background:transparent;color:var(--ink)}
 .btn-ghost:hover{background:var(--ink);color:var(--on-ink)}
 .fine{font-family:var(--mono);font-size:.78rem;color:var(--ink-soft);letter-spacing:.02em}
 
 /* ticker */
-.ticker{background:var(--ink);color:var(--on-ink);font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase}
+.ticker{background:var(--pop);color:var(--on-pop);font-weight:500;font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase}
 .ticker .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:.4em 2.2em;padding-block:.7em}
-.ticker span::before{content:"◆";color:var(--gold);margin-right:.8em;font-size:.6em;vertical-align:.2em}
+.ticker span::before{content:"◆";color:var(--on-pop);margin-right:.8em;font-size:.6em;vertical-align:.2em}
 
 /* nav */
 nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bone) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
@@ -63,16 +63,21 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px
 section{padding-block:clamp(64px,9vw,120px);border-bottom:1px solid var(--rule)}
 
 /* hero */
-.hero{padding-block:clamp(48px,7vw,96px)}
+.hero{padding-block:clamp(56px,8vw,112px);background:var(--hero);color:var(--on-hero);border:0}
+.hero .label{color:var(--pop)}
+.hero .tag .label{color:var(--gold)}
+.hero .lead{color:color-mix(in srgb,var(--on-hero) 88%,transparent)}
+.hero .btn{background:var(--pop);color:var(--on-pop);border-color:var(--pop)}
+.hero .btn:hover{background:transparent;color:var(--on-hero);border-color:var(--on-hero)}
 .hero-grid{display:grid;grid-template-columns:1.25fr .9fr;gap:clamp(32px,5vw,72px);align-items:center}
 .hero-grid>*{min-width:0}
-.hero h1 em{font-style:italic;color:var(--gold)}
+.hero h1 em{font-style:italic;color:var(--pop)}
 .hero-copy{display:grid;gap:26px}
 .cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
-.proof{display:flex;align-items:center;gap:10px;font-size:.95rem;color:var(--ink-soft)}
-.proof b{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
-.tag{position:relative;background:var(--paper);border:1px solid var(--rule);padding:28px 26px 26px;display:grid;gap:18px}
-.tag::before{content:"";position:absolute;top:18px;left:50%;width:14px;height:14px;margin-left:-7px;border-radius:50%;border:1px solid var(--rule);background:var(--bone)}
+.proof{display:flex;align-items:center;gap:10px;font-size:.95rem;color:color-mix(in srgb,var(--on-hero) 85%,transparent)}
+.proof b{color:var(--on-hero);font-weight:600;font-variant-numeric:tabular-nums}
+.tag{position:relative;color:var(--ink);background:var(--paper);border:1px solid var(--rule);padding:28px 26px 26px;display:grid;gap:18px}
+.tag::before{content:"";position:absolute;top:18px;left:50%;width:14px;height:14px;margin-left:-7px;border-radius:50%;border:1px solid var(--rule);background:var(--hero)}
 .video{display:grid;place-items:center;aspect-ratio:16/10;max-width:100%;margin-top:18px;background:var(--ink);color:var(--on-ink);text-decoration:none;position:relative;overflow:hidden}
 .video span{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;border:1px solid var(--gold);color:var(--gold);font-size:1.3rem;transition:transform .25s}
 .video:hover span{transform:scale(1.08)}
@@ -83,11 +88,11 @@ section{padding-block:clamp(64px,9vw,120px);border-bottom:1px solid var(--rule)}
 @media (max-width:860px){.hero-grid{grid-template-columns:1fr}}
 
 /* thesis */
-.thesis{background:var(--ink);color:var(--on-ink);border:0}
-.thesis .label{color:var(--gold)}
+.thesis{background:var(--deep);color:var(--on-deep);border:0}
+.thesis .label{color:var(--pop)}
 .thesis-grid{display:grid;gap:40px}
 .roles{display:flex;flex-wrap:wrap;gap:10px}
-.roles span{border:1px solid color-mix(in srgb,var(--on-ink) 30%,transparent);padding:.45em .9em;font-size:.92rem}
+.roles span{border:1px solid color-mix(in srgb,var(--on-deep) 35%,transparent);padding:.45em .9em;font-size:.92rem}
 .thesis h2{font-size:clamp(2.2rem,5vw,3.8rem);max-width:18ch}
 .thesis p{max-width:62ch;font-size:1.12rem;opacity:.85}
 
@@ -100,7 +105,7 @@ section{padding-block:clamp(64px,9vw,120px);border-bottom:1px solid var(--rule)}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
 .stats div{padding:18px 16px 18px 0;display:grid;gap:4px}
 .stats div+div{padding-left:16px;border-left:1px solid var(--rule)}
-.stats b{font-family:var(--display);font-weight:400;font-size:2.6rem;line-height:1;font-variant-numeric:tabular-nums}
+.stats b{color:var(--gold);font-family:var(--display);font-weight:400;font-size:2.6rem;line-height:1;font-variant-numeric:tabular-nums}
 .stats span{font-size:.85rem;color:var(--ink-soft)}
 .path{list-style:none;margin:0;padding:0;display:grid;gap:0}
 .path li{display:grid;grid-template-columns:1fr auto;gap:16px;padding:12px 0;border-bottom:1px dashed var(--rule)}
@@ -154,13 +159,17 @@ summary::after{content:"+";font-family:var(--mono);color:var(--gold);transition:
 details[open] summary::after{transform:rotate(45deg)}
 details .a{padding:0 0 22px;color:var(--ink-soft);display:grid;gap:12px;max-width:62ch}
 details ul{margin:0;padding-left:1.1em;display:grid;gap:4px}
+.faq-grid .head{align-content:start;align-self:start}
 @media (max-width:860px){.faq-grid{grid-template-columns:1fr}}
 
 /* final */
-.final{text-align:center;border-bottom:0}
+.final{text-align:center;border-bottom:0;background:var(--hero);color:var(--on-hero)}
+.final .label{color:var(--pop)}
+.final .btn{background:var(--pop);color:var(--on-pop);border-color:var(--pop)}
+.final .btn:hover{background:transparent;color:var(--on-hero);border-color:var(--on-hero)}
 .final .wrap{display:grid;gap:24px;justify-items:center}
 .final h2{font-size:clamp(2.4rem,5.4vw,4.2rem);max-width:16ch}
-.final p{color:var(--ink-soft)}
+.final p{color:color-mix(in srgb,var(--on-hero) 88%,transparent);font-size:1.15rem}
 footer.site{padding-block:32px;border-top:1px solid var(--rule)}
 footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 
@@ -203,9 +212,9 @@ footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
 
 <header class="hero" id="top"><div class="wrap hero-grid">
   <div class="hero-copy">
-    <span class="label">How Fashion Really Works</span>
-    <h1>Be the exec in the room, <em>not the one taking notes.</em></h1>
-    <p class="lead">Build the commercial fluency to lead in fashion and luxury. A 12-week programme that asks for no more than 3 hours a week, with direct mentoring from a fashion Chief Commercial Officer on top.</p>
+    <span class="label">For fashion and luxury professionals</span>
+    <h1>Become leadership-ready in fashion <em>in 12 weeks.</em></h1>
+    <p class="lead">A practical programme in how fashion businesses really work, with direct mentoring from a sitting Chief Commercial Officer. Up to 3 hours a week. Built for buyers, merchandisers, marketers and product teams ready for a senior role.</p>
     <div class="cta-row">
       <a class="btn" href="#apply" data-apply>Apply to join HFRW <span aria-hidden="true">→</span></a>
       <span class="proof"><b>63</b> fashion and luxury professionals already inside</span>
@@ -259,7 +268,7 @@ footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
 <section id="programme"><div class="wrap">
   <div class="head">
     <span class="label">How it works</span>
-    <h2>Not a course on trends. The mechanics beneath them.</h2>
+    <h2>What you'll learn, week by week.</h2>
     <p class="lead">A 12-week programme, one theme a week, that asks for no more than 3 hours a week. You study the industry's most important brands, analyse real commercial decisions and complete a practical task you can submit for feedback. Mentoring comes on top of those 3 hours.</p>
   </div>
   <div class="stages">
@@ -335,7 +344,7 @@ footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
 
 <section class="final"><div class="wrap">
   <span class="label">Applications reviewed on a rolling basis</span>
-  <h2>Understand how fashion really works. Then lead it.</h2>
+  <h2>Become leadership-ready in fashion in 12 weeks.</h2>
   <p>Think critically. Decide better. Communicate with confidence.</p>
   <a class="btn" href="#apply" data-apply>Apply to join HFRW <span aria-hidden="true">→</span></a>
 </div></section>
