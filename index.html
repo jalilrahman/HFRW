@@ -11,15 +11,15 @@
 <style>
 /* Layout: an editorial lookbook column with a range-plan "line sheet" for the programme; swing-tag details carry the fashion vernacular */
 :root{
-  --bone:#F8F6F1; --paper:#FFFFFF; --ink:#0B1330; --ink-soft:#343C52; --rule:#D9D3C7; --gold:#1E3BD6; --on-ink:#FFFFFF; --on-accent:#FFFFFF; --pop:#F5B921; --on-pop:#0B1330; --hero:#1E3BD6; --on-hero:#FFFFFF; --deep:#0B1330; --on-deep:#FFFFFF;
+  --bone:#F8F6F1; --paper:#FFFFFF; --ink:#0B1330; --ink-soft:#343C52; --rule:#D9D3C7; --gold:#1E3BD6; --on-ink:#FFFFFF; --on-accent:#FFFFFF; --pop:#F5B921; --on-pop:#0B1330; --hero:#1E3BD6; --on-hero:#FFFFFF; --deep:#0B1330; --on-deep:#FFFFFF; --tint:#E4E9FF;
   --display:"DM Serif Display", Georgia, "Times New Roman", serif;
   --body:"Instrument Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
   --wrap:1120px;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bone:#0A1022; --paper:#121A33; --ink:#F3F0E9; --ink-soft:#C3C9D8; --rule:#283152; --gold:#8CA0FF; --on-ink:#0A1022; --on-accent:#0A1022; --pop:#F7C43E; --on-pop:#0B1330; --hero:#1A2FA8; --on-hero:#FFFFFF; --deep:#050916; --on-deep:#FFFFFF; color-scheme:dark}}
-:root[data-theme="dark"]{--bone:#0A1022; --paper:#121A33; --ink:#F3F0E9; --ink-soft:#C3C9D8; --rule:#283152; --gold:#8CA0FF; --on-ink:#0A1022; --on-accent:#0A1022; --pop:#F7C43E; --on-pop:#0B1330; --hero:#1A2FA8; --on-hero:#FFFFFF; --deep:#050916; --on-deep:#FFFFFF; color-scheme:dark}
+  --bone:#0A1022; --paper:#121A33; --ink:#F3F0E9; --ink-soft:#C3C9D8; --rule:#283152; --gold:#8CA0FF; --on-ink:#0A1022; --on-accent:#0A1022; --pop:#F7C43E; --on-pop:#0B1330; --hero:#1A2FA8; --on-hero:#FFFFFF; --deep:#050916; --on-deep:#FFFFFF; --tint:#0F1A44; color-scheme:dark}}
+:root[data-theme="dark"]{--bone:#0A1022; --paper:#121A33; --ink:#F3F0E9; --ink-soft:#C3C9D8; --rule:#283152; --gold:#8CA0FF; --on-ink:#0A1022; --on-accent:#0A1022; --pop:#F7C43E; --on-pop:#0B1330; --hero:#1A2FA8; --on-hero:#FFFFFF; --deep:#050916; --on-deep:#FFFFFF; --tint:#0F1A44; color-scheme:dark}
 
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -173,6 +173,7 @@ details ul{margin:0;padding-left:1.1em;display:grid;gap:4px}
 /* final */
 .final{text-align:center;border-bottom:0;background:var(--hero);color:var(--on-hero)}
 .final .label{color:var(--pop)}
+.final h2 em{font-style:italic;color:var(--pop)}
 .final .btn{background:var(--pop);color:var(--on-pop);border-color:var(--pop)}
 .final .btn:hover{background:transparent;color:var(--on-hero);border-color:var(--on-hero)}
 .final .wrap{display:grid;gap:24px;justify-items:center}
@@ -199,6 +200,28 @@ footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
 .row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px}
 .linkbtn{background:none;border:0;color:var(--ink-soft);font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
 .err{color:#B3412E;font-size:.9rem}
+
+/* bold section colours */
+#mentor{background:var(--pop);color:var(--on-pop);border:0}
+#mentor .label{color:var(--on-pop);opacity:.75}
+#mentor h2{color:var(--on-pop)}
+#mentor .mentor-copy p{color:color-mix(in srgb,var(--on-pop) 88%,transparent)}
+#mentor .stats{border-color:color-mix(in srgb,var(--on-pop) 30%,transparent)}
+#mentor .stats div+div{border-left-color:color-mix(in srgb,var(--on-pop) 30%,transparent)}
+#mentor .stats b{color:var(--hero)}
+#mentor .stats span{color:color-mix(in srgb,var(--on-pop) 80%,transparent)}
+#mentor .path li{border-bottom-color:color-mix(in srgb,var(--on-pop) 30%,transparent)}
+#mentor .path li span:last-child{color:color-mix(in srgb,var(--on-pop) 70%,transparent)}
+.sheet{border:0;box-shadow:0 1px 0 var(--rule)}
+.sheet header{background:var(--hero);color:var(--on-hero);border-bottom:0}
+.sheet header .label{color:var(--pop)}
+.included b{color:var(--gold)}
+.mechanics{color:var(--gold)}
+#faq{background:var(--tint);border:0}
+#faq details,#faq details:first-child{border-color:color-mix(in srgb,var(--gold) 35%,transparent)}
+#faq summary{font-weight:600}
+footer.site{background:var(--deep);color:var(--on-deep);border:0}
+footer.site .fine,footer.site.fine{color:color-mix(in srgb,var(--on-deep) 75%,transparent)}
 </style>
 </head>
 <body>
@@ -329,7 +352,7 @@ footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
 <section id="faq"><div class="wrap faq-grid">
   <div class="head"><span class="label">FAQs</span><h2>Frequently asked questions</h2></div>
   <div>
-    <details open><summary>What is How Fashion Really Works?</summary><div class="a"><p>HFRW is a 12-week programme that builds the commercial fluency you need to succeed in the modern fashion industry. It comes with weekly live seminars and direct mentoring from a working CCO.</p></div></details>
+    <details open><summary>What is How Fashion Really Works?</summary><div class="a"><p>HFRW is a 12-week programme that teaches you how fashion brands make money and how senior leaders make decisions. It comes with weekly live seminars and personal mentoring from a fashion Chief Commercial Officer.</p></div></details>
     <details><summary>Who is it for?</summary><div class="a"><p>It's for ambitious professionals on the commercial side of fashion and luxury: buyers, merchandisers, marketers, product developers, ecommerce, licensing and wholesale teams, and founders. Most members are managers working towards Head of or Director.</p></div></details>
     <details><summary>What will I learn?</summary><div class="a"><p>You'll learn how the whole system works, not just one function. The twelve weeks run in this order:</p><ul><li>The fashion business foundations</li><li>Why customers buy</li><li>Positioning, branding and competitive advantage</li><li>Product strategy and commercial creativity</li><li>Retail, wholesale and distribution</li><li>Revenue growth beyond product</li><li>Commercial literacy and financial fluency</li><li>Scaling a fashion business</li><li>Culture, influence and relevance</li><li>How fashion companies actually operate</li><li>Career paths in the fashion business</li><li>Thinking like an executive</li></ul><p>Along the way you'll learn to use AI for the analysis without outsourcing the decision.</p></div></details>
     <details><summary>How is the programme structured?</summary><div class="a"><p>Twelve weeks, one theme a week. Each week you study major brands, analyse real commercial decisions and complete a practical task you can submit for feedback.</p></div></details>
@@ -345,7 +368,7 @@ footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
 
 <section class="final"><div class="wrap">
   <span class="label">Applications reviewed on a rolling basis</span>
-  <h2>Become leadership-ready in fashion in 12 weeks.</h2>
+  <h2>Become leadership-ready <em>in 12 weeks.</em></h2>
   <p>Think critically. Decide better. Communicate with confidence.</p>
   <a class="btn" href="#apply" data-apply>Apply to join HFRW <span aria-hidden="true">→</span></a>
 </div></section>
