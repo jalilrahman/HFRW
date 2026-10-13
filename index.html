@@ -96,7 +96,8 @@ section{padding-block:clamp(64px,9vw,120px);border-bottom:1px solid var(--rule)}
 .roles span{border:1px solid color-mix(in srgb,var(--on-deep) 35%,transparent);padding:.45em .9em;font-size:.92rem}
 .thesis h2{font-size:clamp(2.2rem,5vw,3.8rem);max-width:18ch}
 .thesis p{max-width:62ch;font-size:1.12rem;opacity:.85}
-.thesis h2{max-width:24ch;font-size:clamp(2rem,4vw,3.1rem)}
+.thesis h2{max-width:none;font-size:clamp(2.4rem,5.4vw,4.4rem);line-height:1.05}
+@media (min-width:760px){.thesis h2{white-space:nowrap}}
 .thesis .fit{align-items:start}
 .thesis h2 em{font-style:italic;color:var(--pop)}
 .thesis .fit div{background:transparent;border:1px solid color-mix(in srgb,var(--on-deep) 28%,transparent)}
@@ -273,11 +274,11 @@ footer.site .fine,footer.site.fine{color:color-mix(in srgb,var(--on-deep) 75%,tr
       <li>You're good at your job but want to understand how the whole business makes money</li>
       <li>You want to step up to Head of, Director or beyond</li>
       <li>You're a designer or founder who wants to make better business decisions</li>
+      <li>You're a graduate or early in your career and want to start with the full picture</li>
       <li>You can give up to 3 hours a week and will use what you learn at work</li>
     </ul></div>
     <div class="no"><h3>HFRW is not for you if</h3><ul>
       <li>You want design, styling or creative training</li>
-      <li>You're looking for your first job in fashion</li>
       <li>You want a certificate without doing the work</li>
       <li>You expect a guaranteed promotion or job title</li>
     </ul></div>
@@ -460,7 +461,7 @@ function contact(){
     result(Object.assign({}, answers, {first: g("f_first")}));
   };
 }
-function isFit(a){ return a.years !== "Under 3 years" && a.time !== "Under 1 hour"; }
+function isFit(a){ return a.time !== "Under 1 hour"; }
 function result(a){
   if (isFit(a)) {
     body.innerHTML = '<span class="label">Application received</span><h2 id="mTitle" style="font-size:2rem">You look like a strong fit, '+esc(a.first)+'.</h2>'+
@@ -469,7 +470,7 @@ function result(a){
     '<p class="fine">Monthly membership. Cancel any time.</p>';
   } else {
     body.innerHTML = '<span class="label">Thank you</span><h2 id="mTitle" style="font-size:2rem">Thank you for applying, '+esc(a.first)+'.</h2>'+
-    '<p class="lead" style="font-size:1rem">HFRW works best when you can give it a little more time, or are a little further into your career. In the meantime, start building commercial judgement with the free guide.</p>'+
+    '<p class="lead" style="font-size:1rem">HFRW works best when you can give it up to 3 hours a week. When you have the time, we would love to have you. In the meantime, start building commercial judgement with the free guide.</p>'+
     (CONFIG.leadMagnetUrl ? '<div><a class="btn" href="'+esc(CONFIG.leadMagnetUrl)+'" target="_blank" rel="noopener">Get "The 10 Commercial Decisions" →</a></div>' : '')+
     '<div><a class="linkbtn" href="'+esc(CONFIG.skoolUrl)+'" target="_blank" rel="noopener">Join on Skool anyway</a></div>';
   }
