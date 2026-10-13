@@ -96,6 +96,13 @@ section{padding-block:clamp(64px,9vw,120px);border-bottom:1px solid var(--rule)}
 .roles span{border:1px solid color-mix(in srgb,var(--on-deep) 35%,transparent);padding:.45em .9em;font-size:.92rem}
 .thesis h2{font-size:clamp(2.2rem,5vw,3.8rem);max-width:18ch}
 .thesis p{max-width:62ch;font-size:1.12rem;opacity:.85}
+.thesis h2{max-width:24ch;font-size:clamp(2rem,4vw,3.1rem)}
+.thesis .fit{align-items:start}
+.thesis .fit div{background:transparent;border:1px solid color-mix(in srgb,var(--on-deep) 28%,transparent)}
+.thesis .fit h3{color:var(--pop)}
+.thesis .fit li{color:color-mix(in srgb,var(--on-deep) 92%,transparent)}
+.thesis .yes li::before{color:var(--pop)}
+.thesis .no li::before{color:color-mix(in srgb,var(--on-deep) 60%,transparent)}
 
 /* mentor */
 .mentor-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(32px,5vw,72px)}
@@ -215,7 +222,7 @@ footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
   <div class="hero-copy">
     <p class="kicker">Fashion’s commercial education</p>
     <h1>Become leadership-ready <em>in 12 weeks.</em></h1>
-    <p class="lead">A practical programme in how fashion businesses really work, with direct mentoring from a sitting Chief Commercial Officer. Up to 3 hours a week. Built for buyers, merchandisers, marketers and product teams ready for a senior role.</p>
+    <p class="lead">Learn how fashion brands really make money, and how the people who run them make decisions. One topic a week for 12 weeks, up to 3 hours a week, with personal mentoring from a fashion Chief Commercial Officer.</p>
     <div class="cta-row">
       <a class="btn" href="#apply" data-apply>Apply to join HFRW <span aria-hidden="true">→</span></a>
       <span class="proof"><b>63</b> fashion and luxury professionals already inside</span>
@@ -233,13 +240,24 @@ footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
   </aside>
 </div></header>
 
-<section class="thesis"><div class="wrap thesis-grid">
-  <span class="label">Whatever your goal</span>
-  <div class="roles" aria-label="Roles HFRW prepares you for">
-    <span>Buyer</span><span>Merchandiser</span><span>Marketer</span><span>Product developer</span><span>Ecommerce specialist</span><span>Licensing manager</span><span>Commercial director</span><span>Founder</span><span>Future CEO</span>
+<section class="thesis" id="who"><div class="wrap thesis-grid">
+  <span class="label">Who it's for</span>
+  <h2>For people in fashion who want to understand the whole business, not just their part of it.</h2>
+  <div class="fit">
+    <div class="yes"><h3>HFRW is for you if</h3><ul>
+      <li>You work in fashion or luxury, in buying, merchandising, product, marketing, ecommerce, wholesale or retail</li>
+      <li>You're good at your job but want to understand how the whole business makes money</li>
+      <li>You want to step up to Head of, Director or beyond</li>
+      <li>You're a designer or founder who wants to make better business decisions</li>
+      <li>You can give up to 3 hours a week and will use what you learn at work</li>
+    </ul></div>
+    <div class="no"><h3>HFRW is not for you if</h3><ul>
+      <li>You want design, styling or creative training</li>
+      <li>You're looking for your first job in fashion</li>
+      <li>You want a certificate without doing the work</li>
+      <li>You expect a guaranteed promotion or job title</li>
+    </ul></div>
   </div>
-  <h2>You must understand how fashion businesses actually work.</h2>
-  <p>The most valuable people in any organisation rarely understand only their own department. They understand how the moving parts connect. HFRW teaches the whole system, not one function.</p>
 </div></section>
 
 <section id="mentor"><div class="wrap mentor-grid">
@@ -306,24 +324,6 @@ footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
   </div>
   <p class="mechanics">The goal is to make you commercially literate: someone who thinks critically, decides well and creates real value wherever they work.</p>
   <div class="cta-row" style="margin-top:36px"><a class="btn" href="#apply" data-apply>Apply to join HFRW <span aria-hidden="true">→</span></a></div>
-</div></section>
-
-<section id="fit"><div class="wrap">
-  <div class="head"><span class="label">Fit</span><h2>Is HFRW right for you?</h2></div>
-  <div class="fit">
-    <div class="yes"><h3>HFRW is for you if</h3><ul>
-      <li>You work, or want to work, on the commercial side of fashion: buying, merchandising, marketing, product, ecommerce, licensing, wholesale, retail, or as a founder</li>
-      <li>You run your own area well but want to understand how the whole business works</li>
-      <li>You want Head of, Director or beyond within the next one to three years</li>
-      <li>You'll apply what you learn at work and act on feedback</li>
-    </ul></div>
-    <div class="no"><h3>HFRW is not for you if</h3><ul>
-      <li>You only want a certificate or passive video content</li>
-      <li>You expect a guaranteed promotion or title</li>
-      <li>You're after design or creative training. HFRW covers the commercial side</li>
-      <li>You won't practise or use it on real work</li>
-    </ul></div>
-  </div>
 </div></section>
 
 <section id="faq"><div class="wrap faq-grid">
