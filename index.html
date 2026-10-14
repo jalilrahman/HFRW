@@ -225,6 +225,42 @@ footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
 footer.site{background:var(--deep);color:var(--on-deep);border:0}
 footer.site .fine,footer.site.fine{color:color-mix(in srgb,var(--on-deep) 75%,transparent)}
 #mentor .mentor-copy .signature{font-family:var(--display);font-style:italic;font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.2;color:var(--hero);max-width:22ch;margin-top:-6px}
+
+/* inside the programme strip */
+.inside{padding-block:clamp(56px,7vw,96px);overflow:hidden}
+.inside .head{margin-bottom:36px}
+.inside h2 em{font-style:italic;color:var(--gold)}
+.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.track{display:flex;width:max-content;animation:hfrw-scroll 80s linear infinite}
+.marquee:hover .track,.marquee:focus-within .track{animation-play-state:paused}
+.slide{display:block;margin-right:20px;flex:none}
+.slide img{display:block;height:clamp(170px,22vw,290px);width:auto;max-width:none;aspect-ratio:16/9;box-shadow:0 18px 40px -22px rgba(11,19,48,.55);transition:transform .25s}
+.slide:hover img{transform:translateY(-4px)}
+@keyframes hfrw-scroll{to{transform:translateX(-50%)}}
+.brands{margin-top:32px;color:var(--ink-soft);font-size:.95rem;line-height:1.7}
+.brands b{color:var(--ink);font-weight:600}
+@media (prefers-reduced-motion: reduce){.marquee{overflow-x:auto}}
+/* week viewer */
+.weeks{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.35fr);gap:28px;align-items:start}
+.weeklist li{display:block;padding:0;border-bottom:1px solid var(--rule)}
+.weeklist li.sub{padding:10px 22px;font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);background:var(--bone)}
+.wk{-webkit-appearance:none;appearance:none;background:none;border:0;font:inherit;color:inherit;text-align:left;display:grid;grid-template-columns:5.4em 1fr;gap:12px;width:100%;padding:11px 22px;cursor:pointer;align-items:baseline;transition:background .15s}
+.wk:hover{background:var(--tint)}
+.wk[aria-pressed="true"]{background:var(--gold);color:var(--on-accent)}
+.weeklist .wk[aria-pressed="true"] code{color:var(--on-accent);opacity:.85}
+.wk:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+.viewer{position:sticky;top:96px;margin:0;background:var(--paper);box-shadow:0 24px 60px -28px rgba(11,19,48,.45)}
+.viewer img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:var(--bone);transition:opacity .2s}
+.viewer img.fading{opacity:0}
+.viewer figcaption{padding:20px 24px 24px;display:grid;gap:6px}
+.viewer b{font-family:var(--display);font-weight:400;font-size:1.6rem;line-height:1.15}
+.viewer .note{color:var(--ink-soft)}
+@media (max-width:860px){.weeks{grid-template-columns:1fr}.viewer{position:static;order:-1}}
+/* motion */
+@keyframes hfrw-rise{from{opacity:0;transform:translateY(16px)}}
+.hero-copy>*{animation:hfrw-rise .7s cubic-bezier(.2,.7,.2,1) both}
+.hero-copy>*:nth-child(2){animation-delay:.08s}.hero-copy>*:nth-child(3){animation-delay:.16s}.hero-copy>*:nth-child(4){animation-delay:.24s}
+.hero .tag{animation:hfrw-rise .8s .3s cubic-bezier(.2,.7,.2,1) both}
 </style>
 </head>
 <body>
@@ -264,6 +300,44 @@ footer.site .fine,footer.site.fine{color:color-mix(in srgb,var(--on-deep) 75%,tr
     </dl>
   </aside>
 </div></header>
+
+<section class="inside" id="inside">
+  <div class="wrap head">
+    <span class="label">Inside the programme</span>
+    <h2>Real brands. Real numbers. <em>Real decisions.</em></h2>
+    <p class="lead">A look at the slides members work through. Tap any slide to see which week it comes from.</p>
+  </div>
+  <div class="marquee">
+    <div class="track">
+      <a href="#programme" class="slide" data-i="0"><img src="slides/w01.jpg" alt="Week 1: The Fashion Business Foundations" width="1280" height="720" loading="lazy"></a>
+      <a href="#programme" class="slide" data-i="1"><img src="slides/w02.jpg" alt="Week 2: Understanding Why Customers Buy" width="1280" height="720" loading="lazy"></a>
+      <a href="#programme" class="slide" data-i="2"><img src="slides/w03.jpg" alt="Week 3: Positioning, Branding &amp; Competitive Advantage" width="1280" height="720" loading="lazy"></a>
+      <a href="#programme" class="slide" data-i="3"><img src="slides/w04.jpg" alt="Week 4: Product Strategy &amp; Commercial Creativity" width="1280" height="720" loading="lazy"></a>
+      <a href="#programme" class="slide" data-i="4"><img src="slides/w05.jpg" alt="Week 5: Retail, Wholesale &amp; Distribution" width="1280" height="720" loading="lazy"></a>
+      <a href="#programme" class="slide" data-i="5"><img src="slides/w06.jpg" alt="Week 6: Revenue Growth Beyond Product" width="1280" height="720" loading="lazy"></a>
+      <a href="#programme" class="slide" data-i="6"><img src="slides/w07.jpg" alt="Week 7: Commercial Literacy &amp; Financial Fluency" width="1280" height="720" loading="lazy"></a>
+      <a href="#programme" class="slide" data-i="7"><img src="slides/w08.jpg" alt="Week 8: Scaling Fashion Business" width="1280" height="720" loading="lazy"></a>
+      <a href="#programme" class="slide" data-i="8"><img src="slides/w09.jpg" alt="Week 9: Culture, Influence &amp; Relevance" width="1280" height="720" loading="lazy"></a>
+      <a href="#programme" class="slide" data-i="9"><img src="slides/w10.jpg" alt="Week 10: How Fashion Companies Actually Operate" width="1280" height="720" loading="lazy"></a>
+      <a href="#programme" class="slide" data-i="10"><img src="slides/w11.jpg" alt="Week 11: Career Paths in Fashion Business" width="1280" height="720" loading="lazy"></a>
+      <a href="#programme" class="slide" data-i="11"><img src="slides/w12.jpg" alt="Week 12: Thinking Like an Executive" width="1280" height="720" loading="lazy"></a>
+      <a href="#programme" class="slide" data-i="0" tabindex="-1" aria-hidden="true"><img src="slides/w01.jpg" alt="" width="1280" height="720" loading="lazy"></a>
+      <a href="#programme" class="slide" data-i="1" tabindex="-1" aria-hidden="true"><img src="slides/w02.jpg" alt="" width="1280" height="720" loading="lazy"></a>
+      <a href="#programme" class="slide" data-i="2" tabindex="-1" aria-hidden="true"><img src="slides/w03.jpg" alt="" width="1280" height="720" loading="lazy"></a>
+      <a href="#programme" class="slide" data-i="3" tabindex="-1" aria-hidden="true"><img src="slides/w04.jpg" alt="" width="1280" height="720" loading="lazy"></a>
+      <a href="#programme" class="slide" data-i="4" tabindex="-1" aria-hidden="true"><img src="slides/w05.jpg" alt="" width="1280" height="720" loading="lazy"></a>
+      <a href="#programme" class="slide" data-i="5" tabindex="-1" aria-hidden="true"><img src="slides/w06.jpg" alt="" width="1280" height="720" loading="lazy"></a>
+      <a href="#programme" class="slide" data-i="6" tabindex="-1" aria-hidden="true"><img src="slides/w07.jpg" alt="" width="1280" height="720" loading="lazy"></a>
+      <a href="#programme" class="slide" data-i="7" tabindex="-1" aria-hidden="true"><img src="slides/w08.jpg" alt="" width="1280" height="720" loading="lazy"></a>
+      <a href="#programme" class="slide" data-i="8" tabindex="-1" aria-hidden="true"><img src="slides/w09.jpg" alt="" width="1280" height="720" loading="lazy"></a>
+      <a href="#programme" class="slide" data-i="9" tabindex="-1" aria-hidden="true"><img src="slides/w10.jpg" alt="" width="1280" height="720" loading="lazy"></a>
+      <a href="#programme" class="slide" data-i="10" tabindex="-1" aria-hidden="true"><img src="slides/w11.jpg" alt="" width="1280" height="720" loading="lazy"></a>
+      <a href="#programme" class="slide" data-i="11" tabindex="-1" aria-hidden="true"><img src="slides/w12.jpg" alt="" width="1280" height="720" loading="lazy"></a>
+    </div>
+  </div>
+  <div class="wrap"><p class="brands">Case studies include <b>Louis Vuitton · Hermès · Chanel · Gucci · Burberry · Balenciaga · Rolex · Corteiz · Jacquemus · Thom Browne · Ralph Lauren · adidas</b></p></div>
+</section>
+
 
 <section class="thesis" id="who"><div class="wrap thesis-grid">
   <span class="label">Who it's for</span>
@@ -316,29 +390,30 @@ footer.site .fine,footer.site.fine{color:color-mix(in srgb,var(--on-deep) 75%,tr
     <h2>What you'll learn, week by week.</h2>
     <p class="lead">A 12-week programme, one theme a week, that asks for no more than 3 hours a week. You study the industry's most important brands, analyse real commercial decisions and complete a practical task you can submit for feedback. Mentoring comes on top of those 3 hours.</p>
   </div>
-  <div class="stages">
-    <article class="sheet">
-      <header><h3>Weeks 1–6</h3><span class="label">How the business works</span></header>
+  <div class="weeks">
+    <article class="sheet weeklist">
+      <header><h3>The 12 weeks</h3><span class="label">Tap a week</span></header>
       <ol>
-        <li><code>Week 01</code><span>The Fashion Business Foundations</span></li>
-        <li><code>Week 02</code><span>Understanding Why Customers Buy</span></li>
-        <li><code>Week 03</code><span>Positioning, Branding &amp; Competitive Advantage</span></li>
-        <li><code>Week 04</code><span>Product Strategy &amp; Commercial Creativity</span></li>
-        <li><code>Week 05</code><span>Retail, Wholesale &amp; Distribution</span></li>
-        <li><code>Week 06</code><span>Revenue Growth Beyond Product</span></li>
+        <li class="sub">Weeks 1–6 · How the business works</li>
+        <li><button type="button" class="wk" data-i="0" aria-pressed="true"><code>Week 01</code><span>The Fashion Business Foundations</span></button></li>
+        <li><button type="button" class="wk" data-i="1" aria-pressed="false"><code>Week 02</code><span>Understanding Why Customers Buy</span></button></li>
+        <li><button type="button" class="wk" data-i="2" aria-pressed="false"><code>Week 03</code><span>Positioning, Branding &amp; Competitive Advantage</span></button></li>
+        <li><button type="button" class="wk" data-i="3" aria-pressed="false"><code>Week 04</code><span>Product Strategy &amp; Commercial Creativity</span></button></li>
+        <li><button type="button" class="wk" data-i="4" aria-pressed="false"><code>Week 05</code><span>Retail, Wholesale &amp; Distribution</span></button></li>
+        <li><button type="button" class="wk" data-i="5" aria-pressed="false"><code>Week 06</code><span>Revenue Growth Beyond Product</span></button></li>
+        <li class="sub">Weeks 7–12 · How to lead it</li>
+        <li><button type="button" class="wk" data-i="6" aria-pressed="false"><code>Week 07</code><span>Commercial Literacy &amp; Financial Fluency</span></button></li>
+        <li><button type="button" class="wk" data-i="7" aria-pressed="false"><code>Week 08</code><span>Scaling Fashion Business</span></button></li>
+        <li><button type="button" class="wk" data-i="8" aria-pressed="false"><code>Week 09</code><span>Culture, Influence &amp; Relevance</span></button></li>
+        <li><button type="button" class="wk" data-i="9" aria-pressed="false"><code>Week 10</code><span>How Fashion Companies Actually Operate</span></button></li>
+        <li><button type="button" class="wk" data-i="10" aria-pressed="false"><code>Week 11</code><span>Career Paths in Fashion Business</span></button></li>
+        <li><button type="button" class="wk" data-i="11" aria-pressed="false"><code>Week 12</code><span>Thinking Like an Executive</span></button></li>
       </ol>
     </article>
-    <article class="sheet">
-      <header><h3>Weeks 7–12</h3><span class="label">How to lead it</span></header>
-      <ol start="7">
-        <li><code>Week 07</code><span>Commercial Literacy &amp; Financial Fluency</span></li>
-        <li><code>Week 08</code><span>Scaling Fashion Business</span></li>
-        <li><code>Week 09</code><span>Culture, Influence &amp; Relevance</span></li>
-        <li><code>Week 10</code><span>How Fashion Companies Actually Operate</span></li>
-        <li><code>Week 11</code><span>Career Paths in Fashion Business</span></li>
-        <li><code>Week 12</code><span>Thinking Like an Executive</span></li>
-      </ol>
-    </article>
+    <figure class="viewer" id="viewer" aria-live="polite">
+      <img id="viewImg" src="slides/w01.jpg" alt="Slide from Week 01: The Fashion Business Foundations" width="1280" height="720">
+      <figcaption><span class="label" id="viewWk">Week 01</span><b id="viewTitle">The Fashion Business Foundations</b><span class="note" id="viewNote">The Brand Files: what Burberry, Gucci, Louis Vuitton and Balenciaga were, and what they became.</span></figcaption>
+    </figure>
   </div>
   <div class="included">
     <div><b>Weekly live seminars</b><span>Real industry decisions, numbers and trade-offs.</span></div>
@@ -483,6 +558,40 @@ document.querySelectorAll("[data-apply]").forEach(function(a){ a.addEventListene
 document.getElementById("closeBtn").onclick = close;
 overlay.addEventListener("click", function(e){ if (e.target === overlay) close(); });
 document.addEventListener("keydown", function(e){ if (e.key === "Escape" && !overlay.hidden) close(); });
+
+/* week viewer + strip */
+var WEEKS = [["The Fashion Business Foundations", "The Brand Files: what Burberry, Gucci, Louis Vuitton and Balenciaga were, and what they became."], ["Understanding Why Customers Buy", "The Samba: how a shoe moves from the football terrace to tastemakers to saturation."], ["Positioning, Branding & Competitive Advantage", "Strategic versus aesthetic positioning: where a brand sits, and how it looks."], ["Product Strategy & Commercial Creativity", "Distinctiveness four ways: Thom Browne, Jacquemus, Corteiz and Ralph Lauren."], ["Retail, Wholesale & Distribution", "Luxury distribution discipline at Louis Vuitton, Herm\u00e8s and Rolex."], ["Revenue Growth Beyond Product", "Collaborations and licensing, and the four ways they destroy value."], ["Commercial Literacy & Financial Fluency", "The gross margin equation, worked through on a \u00a3300 product."], ["Scaling Fashion Business", "Corteiz: the modern guerrilla drop brand, and how it keeps growing."], ["Culture, Influence & Relevance", "Gucci: decline is reversible if you catch it early."], ["How Fashion Companies Actually Operate", "The operating system: five levers that work as one."], ["Career Paths in Fashion Business", "The five business engines of fashion, and where your career sits."], ["Thinking Like an Executive", "Chanel: scarcity plus rising price as a deliberate executive decision."]];
+var viewImg = document.getElementById("viewImg");
+function showWeek(i, scroll){
+  var w = WEEKS[i]; if (!w) return;
+  document.querySelectorAll(".wk").forEach(function(b){ b.setAttribute("aria-pressed", String(+b.dataset.i === i)); });
+  var src = "slides/w" + String(i+1).padStart(2,"0") + ".jpg";
+  viewImg.classList.add("fading");
+  var pre = new Image(); pre.onload = pre.onerror = function(){
+    viewImg.src = src; viewImg.alt = "Slide from Week " + String(i+1).padStart(2,"0") + ": " + w[0];
+    document.getElementById("viewWk").textContent = "Week " + String(i+1).padStart(2,"0");
+    document.getElementById("viewTitle").textContent = w[0];
+    document.getElementById("viewNote").textContent = w[1];
+    viewImg.classList.remove("fading");
+  }; pre.src = src;
+  if (scroll) document.getElementById(window.innerWidth <= 860 ? "viewer" : "programme").scrollIntoView({behavior:"smooth", block:"start"});
+}
+document.querySelectorAll(".wk").forEach(function(b){ b.addEventListener("click", function(){ showWeek(+b.dataset.i, window.innerWidth <= 860); }); });
+document.querySelectorAll(".slide").forEach(function(a){ a.addEventListener("click", function(e){ e.preventDefault(); showWeek(+a.dataset.i, true); }); });
+/* count-up stats */
+(function(){
+  var els = [].slice.call(document.querySelectorAll(".stats b")).filter(function(b){ return /^\d+$/.test(b.textContent.trim()); });
+  if (!("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  els.forEach(function(b){
+    var end = +b.textContent.trim();
+    var io = new IntersectionObserver(function(ents){ ents.forEach(function(en){
+      if (!en.isIntersecting) return; io.disconnect();
+      var t0 = null; function step(t){ if(!t0) t0=t; var k=Math.min(1,(t-t0)/1100); b.textContent = Math.round(end*(1-Math.pow(1-k,3))); if(k<1) requestAnimationFrame(step); }
+      b.textContent = "0"; requestAnimationFrame(step);
+    }); }, {threshold:.6});
+    io.observe(b);
+  });
+})();
 </script>
 </body>
 </html>
