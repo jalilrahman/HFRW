@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>How Fashion Really Works | Become leadership-ready in 12 weeks</title>
+<meta name="description" content="Fashion's commercial education. Learn how fashion brands really make money, with personal mentoring from a fashion Chief Commercial Officer. 12 weeks, up to 3 hours a week.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: mobile-first card system — bold grotesk headlines, icon tiles, pillar cards, one dark CTA band */
+:root{
+  --bone:#F7F4EE; --paper:#FFFFFF; --ink:#0B1330; --ink-soft:#434A5E; --rule:#E3DDD2;
+  --gold:#1E3BD6; --cobalt:#1E3BD6; --pop:#F5B921; --on-pop:#0B1330; --deep:#0B1330; --tint:#E8ECFF;
+  --on-ink:#FFFFFF; --on-accent:#FFFFFF;
+  --sans:"Instrument Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --display:"DM Serif Display",Georgia,serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --body:var(--sans);
+  --wrap:1160px; color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bone);color:var(--ink);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+h1,h2,h3{margin:0;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--cobalt);outline-offset:3px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
+.label{font-family:var(--mono);font-size:.76rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--cobalt)}
+.lead{font-size:1.15rem;color:var(--ink-soft);max-width:58ch}
+.fine{font-family:var(--mono);font-size:.78rem;color:var(--ink-soft)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;background:var(--cobalt);color:#fff;border:2px solid var(--cobalt);font:600 1.05rem var(--sans);padding:1em 1.7em;border-radius:6px;cursor:pointer;text-decoration:none;transition:transform .15s,background .2s,color .2s}
+.btn:hover{transform:translateY(-1px);background:#1631B8}
+.btn.pop{background:var(--pop);border-color:var(--pop);color:var(--on-pop)}
+.btn.pop:hover{background:#E5A912}
+.sec{padding-block:clamp(56px,8vw,104px)}
+.sec-head{display:grid;gap:12px;margin-bottom:clamp(28px,4vw,44px)}
+.h2{font:700 clamp(1.9rem,4.2vw,3rem)/1.08 var(--sans);letter-spacing:-.02em}
+.h2 em{font-style:normal;color:var(--cobalt)}
+
+/* header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bone) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.lockup{display:flex;align-items:center;gap:12px;text-decoration:none}
+.lockup b{font:400 1.7rem/1 var(--display);letter-spacing:.02em}
+.lockup span{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;line-height:1.35;border-left:1px solid var(--rule);padding-left:12px;color:var(--ink-soft)}
+.top nav{display:flex;align-items:center;gap:24px;font-size:.95rem}
+.top nav a:not(.btn){text-decoration:none;color:var(--ink-soft)}
+.top nav a:not(.btn):hover{color:var(--ink)}
+.top .btn{padding:.6em 1.1em;font-size:.92rem}
+@media (max-width:760px){.top nav a:not(.btn){display:none}}
+
+/* hero */
+.hero{padding-block:clamp(36px,6vw,80px) clamp(40px,6vw,72px)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(28px,5vw,64px);align-items:center}
+.hero-copy{display:grid;gap:22px;align-content:start}
+.kicker{font:400 clamp(1.3rem,2.4vw,1.7rem)/1.2 var(--display);color:var(--cobalt)}
+.hero h1{font:700 clamp(2.7rem,6.4vw,5rem)/1 var(--sans);letter-spacing:-.035em}
+.hero h1 mark{background:none;color:var(--cobalt)}
+.hero h1 .u{background:linear-gradient(transparent 62%,var(--pop) 62%,var(--pop) 92%,transparent 92%)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center}
+.hero-cta .fine b{color:var(--ink);font-family:var(--sans);font-size:1rem}
+.hero-visual{position:relative}
+
+.hero-visual .badge{position:absolute;left:-18px;bottom:24px;background:var(--pop);color:var(--on-pop);padding:14px 18px;border-radius:8px;box-shadow:0 18px 40px -18px rgba(11,19,48,.5);display:grid;gap:2px;max-width:240px}
+.hero-visual .badge b{font:700 1rem var(--sans)}
+.hero-visual .badge span{font-size:.85rem}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}}
+.hero-copy>*{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+.hero-copy>*:nth-child(2){animation-delay:.07s}.hero-copy>*:nth-child(3){animation-delay:.14s}.hero-copy>*:nth-child(4){animation-delay:.21s}
+.hero-visual{animation:rise .8s .25s cubic-bezier(.2,.7,.2,1) both}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}.hero-visual{max-width:440px}.hero-visual .badge{left:12px}}
+
+/* feature tiles */
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.tile{background:var(--paper);border:1px solid var(--rule);border-radius:10px;padding:22px 20px;display:grid;gap:12px;align-content:start}
+.ico{width:48px;height:48px;border-radius:50%;background:var(--tint);color:var(--cobalt);display:grid;place-items:center}
+.ico svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.tile b{font:600 1.02rem/1.3 var(--sans)}
+.tile span{font-size:.9rem;color:var(--ink-soft);line-height:1.45}
+@media (max-width:900px){.tiles{grid-template-columns:repeat(2,1fr)}}
+
+/* slide strip */
+.strip{background:var(--deep);color:var(--on-ink);padding-block:clamp(48px,6vw,80px);overflow:hidden}
+.strip .label{color:var(--pop)}
+.strip .h2 em{color:var(--pop)}
+.marquee{margin-top:32px;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.track{display:flex;width:max-content;animation:scroll 80s linear infinite}
+.marquee:hover .track{animation-play-state:paused}
+.track img{height:clamp(150px,20vw,260px);width:auto;max-width:none;aspect-ratio:16/9;margin-right:18px;border-radius:6px}
+@keyframes scroll{to{transform:translateX(-50%)}}
+.strip .brands{margin-top:26px;font-size:.92rem;color:color-mix(in srgb,var(--on-ink) 75%,transparent)}
+.strip .brands b{color:var(--on-ink);font-weight:600}
+@media (prefers-reduced-motion: reduce){.marquee{overflow-x:auto}}
+
+/* pillars */
+.pillars{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.pillar{background:var(--paper);border:1px solid var(--rule);border-radius:10px;overflow:hidden;display:grid;align-content:start}
+.pillar img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-bottom:1px solid var(--rule)}
+.pillar-body{padding:22px 22px 24px;display:grid;gap:12px;align-content:start}
+.pillar-body .label{color:var(--ink-soft);font-size:.7rem}
+.pillar h3{font:700 1.25rem/1.15 var(--sans);letter-spacing:-.01em}
+.pillar h3 i{font-style:normal;color:var(--cobalt)}
+.pillar ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.pillar li{display:grid;grid-template-columns:3.4em 1fr;gap:8px;font-size:.93rem;line-height:1.35}
+.pillar li code{font-family:var(--mono);font-size:.72rem;color:var(--cobalt);padding-top:.2em}
+@media (max-width:760px){.pillars{grid-template-columns:1fr}}
+
+.extras{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:inline-flex;align-items:center;gap:8px;background:var(--tint);color:var(--ink);border-radius:999px;padding:.5em 1em;font-size:.9rem;font-weight:500}
+.chip::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--cobalt)}
+
+/* who */
+.who{background:var(--tint)}
+.who-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,64px);align-items:start}
+.who-list{display:grid;gap:12px}
+.who-card{background:var(--paper);border-radius:10px;padding:16px 18px;display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:center;font-weight:500;line-height:1.35;box-shadow:0 1px 0 rgba(11,19,48,.06)}
+.who-card small{display:block;font-weight:400;color:var(--ink-soft);font-size:.88rem;margin-top:2px}
+.notfor{margin-top:18px;font-size:.92rem;color:var(--ink-soft)}
+.notfor b{color:var(--ink)}
+@media (max-width:860px){.who-grid{grid-template-columns:1fr}}
+
+/* mentor */
+.mentor{background:var(--pop);color:var(--on-pop)}
+.mentor .label{color:var(--on-pop);opacity:.75}
+.mentor-card{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:clamp(24px,4vw,56px);align-items:center}
+.mentor-card img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:10px}
+.mentor-copy{display:grid;gap:18px}
+.quote{font:400 italic clamp(1.8rem,3.6vw,2.8rem)/1.15 var(--display);color:var(--cobalt)}
+.mentor-copy p{color:color-mix(in srgb,var(--on-pop) 88%,transparent);max-width:58ch}
+.creds{display:flex;flex-wrap:wrap;gap:8px}
+.creds span{background:rgba(11,19,48,.08);border-radius:999px;padding:.4em .9em;font-size:.88rem;font-weight:500}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.stats div{background:var(--paper);border-radius:8px;padding:14px 16px;display:grid;gap:2px}
+.stats b{font:700 2rem/1 var(--sans);color:var(--cobalt);letter-spacing:-.02em}
+.stats span{font-size:.82rem;color:var(--ink-soft);line-height:1.3}
+@media (max-width:760px){.mentor-card{grid-template-columns:1fr}.mentor-card img{max-width:360px}}
+
+/* inside count */
+.inside-count{padding-block:clamp(40px,5vw,64px);text-align:center}
+.inside-count b{display:block;font:700 clamp(3.4rem,8vw,5.6rem)/1 var(--sans);color:var(--cobalt);letter-spacing:-.04em}
+.inside-count span{font-family:var(--mono);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+
+/* CTA band */
+.band{background:var(--deep);color:var(--on-ink);text-align:center}
+.band .wrap{display:grid;justify-items:center;gap:22px}
+.band h2{font:400 clamp(2.1rem,5vw,3.8rem)/1.1 var(--display);max-width:18ch}
+.band h2 em{color:var(--pop)}
+.band p{color:color-mix(in srgb,var(--on-ink) 80%,transparent)}
+.band .fine{color:color-mix(in srgb,var(--on-ink) 70%,transparent)}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(24px,5vw,64px);align-items:start}
+.faq-list{display:grid;gap:10px}
+details{background:var(--paper);border:1px solid var(--rule);border-radius:8px}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 18px;font-weight:600}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";width:9px;height:9px;border-right:2px solid var(--cobalt);border-bottom:2px solid var(--cobalt);transform:rotate(45deg);transition:transform .2s;flex:none;margin-top:-4px}
+details[open] summary::after{transform:rotate(-135deg);margin-top:4px}
+details .a{padding:0 18px 18px;color:var(--ink-soft);display:grid;gap:10px}
+@media (max-width:860px){.faq-grid{grid-template-columns:1fr}}
+
+footer{background:var(--deep);color:color-mix(in srgb,var(--on-ink) 70%,transparent);padding-block:26px;font-family:var(--mono);font-size:.76rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+
+/* sticky mobile CTA */
+.mcta{display:none}
+@media (max-width:760px){
+  .mcta{display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:color-mix(in srgb,var(--bone) 94%,transparent);backdrop-filter:blur(10px);border-top:1px solid var(--rule);transform:translateY(110%);transition:transform .25s}
+  .mcta.show{transform:none}
+  .mcta .btn{width:100%}
+  body{padding-bottom:76px}
+}
+/* modal */
+.overlay{position:fixed;inset:0;z-index:50;background:color-mix(in srgb,var(--ink) 55%,transparent);display:grid;place-items:center;padding:16px}
+.modal{background:var(--bone);color:var(--ink);width:min(620px,100%);max-height:calc(100dvh - 32px);overflow:auto;border:1px solid var(--rule);padding:clamp(24px,4vw,40px);position:relative;display:grid;gap:22px}
+.close{position:absolute;top:12px;right:14px;background:none;border:0;font-size:1.6rem;color:var(--ink-soft);cursor:pointer;line-height:1}
+.progress{height:2px;background:var(--rule)}
+.progress i{display:block;height:100%;background:var(--gold);transition:width .3s}
+.opts{display:grid;gap:10px}
+.opts button{text-align:left;background:var(--paper);border:1px solid var(--rule);color:var(--ink);font:inherit;font-size:1rem;padding:14px 16px;cursor:pointer;transition:border-color .15s}
+.opts button:hover{border-color:var(--ink)}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fields label{display:grid;gap:6px;font-size:.85rem;color:var(--ink-soft)}
+.fields label.full{grid-column:1/-1}
+.fields input{font:inherit;font-size:1rem;color:var(--ink);background:var(--paper);border:1px solid var(--rule);padding:11px 12px;width:100%}
+.fields input:focus{border-color:var(--ink);outline:none}
+@media (max-width:520px){.fields{grid-template-columns:1fr}}
+.row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px}
+.linkbtn{background:none;border:0;color:var(--ink-soft);font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.err{color:#B3412E;font-size:.9rem}
+
+
+.fan{position:relative;aspect-ratio:5/4;width:100%}
+.fan img{position:absolute;width:78%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:8px;box-shadow:0 24px 50px -24px rgba(11,19,48,.55);transition:transform .35s}
+.fan .f1{left:0;top:2%;transform:rotate(-5deg)}
+.fan .f2{right:0;top:30%;transform:rotate(4deg);z-index:2}
+.fan .f3{left:6%;top:56%;transform:rotate(-2deg);z-index:3}
+.fan:hover .f1{transform:rotate(-7deg) translateY(-6px)}
+.fan:hover .f2{transform:rotate(6deg) translateX(6px)}
+.fan .badge{left:auto;right:-8px;bottom:-6px;z-index:4}
+@media (max-width:860px){.fan{max-width:520px}.fan .badge{right:0}}
+@media (max-width:760px){.mentor-card img{aspect-ratio:1/1;max-width:300px}}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <a class="lockup" href="#top"><b>HFRW</b><span>How fashion<br>really works</span></a>
+  <nav><a href="#programme">Programme</a><a href="#mentor">Mentor</a><a href="#faq">FAQs</a><a class="btn" href="#apply" data-apply>Apply</a></nav>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap hero-grid">
+  <div class="hero-copy">
+    <p class="kicker">Fashion’s commercial education</p>
+    <h1>Become <mark>leadership-ready</mark> in <span class="u">12 weeks.</span></h1>
+    <p class="lead">Learn how fashion brands really make money, and how the people who run them make decisions. One topic a week, up to 3 hours a week, with personal mentoring from a fashion Chief Commercial Officer.</p>
+    <div class="hero-cta">
+      <a class="btn" href="#apply" data-apply>Apply to join HFRW <span aria-hidden="true">→</span></a>
+      <span class="fine"><b>63</b> professionals already inside · $49 a month</span>
+    </div>
+  </div>
+  <figure class="hero-visual fan" style="margin:0" aria-label="Slides from the programme">
+    <img class="f1" src="slides/w11.jpg" alt="Slide: the five business engines of fashion" width="1280" height="720">
+    <img class="f2" src="slides/w07.jpg" alt="Slide: the gross margin equation" width="1280" height="720">
+    <img class="f3" src="slides/w08.jpg" alt="Slide: Corteiz brand case study" width="1280" height="720">
+    <figcaption class="badge"><b>Inside every week</b><span>Real brand case studies, real numbers, real decisions.</span></figcaption>
+  </figure>
+</div></section>
+
+<section class="wrap" aria-label="What you get" style="padding-bottom:clamp(48px,6vw,80px)">
+  <div class="tiles">
+    <div class="tile"><span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg></span><b>12 weekly topics</b><span>One theme a week, up to 3 hours.</span></div>
+    <div class="tile"><span class="ico"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><b>Real brand case studies</b><span>The decisions behind brands you know.</span></div>
+    <div class="tile"><span class="ico"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.5 3.3-5.5 6.5-5.5s5.9 2 6.5 5.5"/><path d="M15.5 4.5h6v5h-3l-2 2v-2h-1z"/></svg></span><b>1:1 mentoring from a CCO</b><span>On top of the weekly 3 hours.</span></div>
+    <div class="tile"><span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="18" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="M10.6 7.1 6.4 15.9M13.4 7.1l4.2 8.8M7.5 18h9"/></svg></span><b>Live seminars + community</b><span>Weekly sessions with future fashion execs.</span></div>
+  </div>
+</section>
+
+<section class="strip" id="inside"><div class="wrap">
+  <div class="sec-head" style="margin-bottom:0">
+    <span class="label">Inside the programme</span>
+    <h2 class="h2">Real brands. Real numbers. <em>Real decisions.</em></h2>
+  </div>
+</div>
+  <div class="marquee"><div class="track">
+    <img src="slides/w01.jpg" alt="Week 1: The Fashion Business Foundations" width="1280" height="720" loading="lazy">
+    <img src="slides/w02.jpg" alt="Week 2: Understanding Why Customers Buy" width="1280" height="720" loading="lazy">
+    <img src="slides/w03.jpg" alt="Week 3: Positioning, Branding &amp; Competitive Advantage" width="1280" height="720" loading="lazy">
+    <img src="slides/w04.jpg" alt="Week 4: Product Strategy &amp; Commercial Creativity" width="1280" height="720" loading="lazy">
+    <img src="slides/w05.jpg" alt="Week 5: Retail, Wholesale &amp; Distribution" width="1280" height="720" loading="lazy">
+    <img src="slides/w06.jpg" alt="Week 6: Revenue Growth Beyond Product" width="1280" height="720" loading="lazy">
+    <img src="slides/w07.jpg" alt="Week 7: Commercial Literacy &amp; Financial Fluency" width="1280" height="720" loading="lazy">
+    <img src="slides/w08.jpg" alt="Week 8: Scaling Fashion Business" width="1280" height="720" loading="lazy">
+    <img src="slides/w09.jpg" alt="Week 9: Culture, Influence &amp; Relevance" width="1280" height="720" loading="lazy">
+    <img src="slides/w10.jpg" alt="Week 10: How Fashion Companies Actually Operate" width="1280" height="720" loading="lazy">
+    <img src="slides/w11.jpg" alt="Week 11: Career Paths in Fashion Business" width="1280" height="720" loading="lazy">
+    <img src="slides/w12.jpg" alt="Week 12: Thinking Like an Executive" width="1280" height="720" loading="lazy">
+    <img src="slides/w01.jpg" alt="" width="1280" height="720" loading="lazy" aria-hidden="true">
+    <img src="slides/w02.jpg" alt="" width="1280" height="720" loading="lazy" aria-hidden="true">
+    <img src="slides/w03.jpg" alt="" width="1280" height="720" loading="lazy" aria-hidden="true">
+    <img src="slides/w04.jpg" alt="" width="1280" height="720" loading="lazy" aria-hidden="true">
+    <img src="slides/w05.jpg" alt="" width="1280" height="720" loading="lazy" aria-hidden="true">
+    <img src="slides/w06.jpg" alt="" width="1280" height="720" loading="lazy" aria-hidden="true">
+    <img src="slides/w07.jpg" alt="" width="1280" height="720" loading="lazy" aria-hidden="true">
+    <img src="slides/w08.jpg" alt="" width="1280" height="720" loading="lazy" aria-hidden="true">
+    <img src="slides/w09.jpg" alt="" width="1280" height="720" loading="lazy" aria-hidden="true">
+    <img src="slides/w10.jpg" alt="" width="1280" height="720" loading="lazy" aria-hidden="true">
+    <img src="slides/w11.jpg" alt="" width="1280" height="720" loading="lazy" aria-hidden="true">
+    <img src="slides/w12.jpg" alt="" width="1280" height="720" loading="lazy" aria-hidden="true">
+  </div></div>
+  <div class="wrap"><p class="brands">Case studies include <b>Louis Vuitton · Hermès · Chanel · Gucci · Burberry · Balenciaga · Rolex · Corteiz · Jacquemus · Thom Browne · Ralph Lauren · adidas</b></p></div>
+</section>
+
+<section class="sec" id="programme"><div class="wrap">
+  <div class="sec-head">
+    <span class="label">The programme</span>
+    <h2 class="h2">Four stages. <em>Twelve weeks.</em></h2>
+    <p class="lead">You study the industry's most important brands, analyse real commercial decisions and complete a practical task each week that you can submit for feedback.</p>
+  </div>
+  <div class="pillars">
+    <article class="pillar">
+      <img src="slides/w03.jpg" alt="" width="1280" height="720">
+      <div class="pillar-body">
+        <span class="label">Weeks 1–3</span>
+        <h3><i>1.</i> Foundations</h3>
+        <ul>
+          <li><code>Wk 01</code><span>The Fashion Business Foundations</span></li>
+          <li><code>Wk 02</code><span>Understanding Why Customers Buy</span></li>
+          <li><code>Wk 03</code><span>Positioning, Branding &amp; Competitive Advantage</span></li>
+        </ul>
+      </div>
+    </article>
+    <article class="pillar">
+      <img src="slides/w05.jpg" alt="" width="1280" height="720">
+      <div class="pillar-body">
+        <span class="label">Weeks 4–6</span>
+        <h3><i>2.</i> Product &amp; channels</h3>
+        <ul>
+          <li><code>Wk 04</code><span>Product Strategy &amp; Commercial Creativity</span></li>
+          <li><code>Wk 05</code><span>Retail, Wholesale &amp; Distribution</span></li>
+          <li><code>Wk 06</code><span>Revenue Growth Beyond Product</span></li>
+        </ul>
+      </div>
+    </article>
+    <article class="pillar">
+      <img src="slides/w07.jpg" alt="" width="1280" height="720">
+      <div class="pillar-body">
+        <span class="label">Weeks 7–9</span>
+        <h3><i>3.</i> Money &amp; growth</h3>
+        <ul>
+          <li><code>Wk 07</code><span>Commercial Literacy &amp; Financial Fluency</span></li>
+          <li><code>Wk 08</code><span>Scaling Fashion Business</span></li>
+          <li><code>Wk 09</code><span>Culture, Influence &amp; Relevance</span></li>
+        </ul>
+      </div>
+    </article>
+    <article class="pillar">
+      <img src="slides/w12.jpg" alt="" width="1280" height="720">
+      <div class="pillar-body">
+        <span class="label">Weeks 10–12</span>
+        <h3><i>4.</i> Leadership</h3>
+        <ul>
+          <li><code>Wk 10</code><span>How Fashion Companies Actually Operate</span></li>
+          <li><code>Wk 11</code><span>Career Paths in Fashion Business</span></li>
+          <li><code>Wk 12</code><span>Thinking Like an Executive</span></li>
+        </ul>
+      </div>
+    </article>
+  </div>
+  <div class="extras"><span class="chip">Weekly live seminars</span><span class="chip">Frameworks and templates from seven brands</span><span class="chip">Using AI without losing your judgement</span><span class="chip">Seminar library</span></div>
+</div></section>
+
+<section class="sec who" id="who"><div class="wrap who-grid">
+  <div class="sec-head">
+    <span class="label">Who it's for</span>
+    <h2 class="h2">Leaders see <em>the whole business.</em></h2>
+    <p class="lead">For people in fashion who want to understand how all the parts connect, and contribute to bigger commercial decisions.</p>
+  </div>
+  <div>
+    <div class="who-list">
+      <div class="who-card"><span class="ico"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></span><div>Buying, merchandising and product<small>Ready to understand the decisions above your range.</small></div></div>
+      <div class="who-card"><span class="ico"><svg viewBox="0 0 24 24"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M15 9a4 4 0 0 1 0 6M18 6a8 8 0 0 1 0 12"/></svg></span><div>Brand and marketing<small>Connect brand building to how the business makes money.</small></div></div>
+      <div class="who-card"><span class="ico"><svg viewBox="0 0 24 24"><path d="M3 9l1.5-5h15L21 9"/><path d="M4 9v11h16V9"/><path d="M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M10 20v-5h4v5"/></svg></span><div>Retail, ecommerce and wholesale<small>See how channels shape margin, cash and brand.</small></div></div>
+      <div class="who-card"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L3.3 9.2l6.1-.6z"/></svg></span><div>Designers and founders<small>Make better business decisions for your brand.</small></div></div>
+      <div class="who-card"><span class="ico"><svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg></span><div>Graduates and early career<small>Start with the full picture, not one department.</small></div></div>
+    </div>
+    <p class="notfor"><b>Not for you if</b> you want design or styling training, a certificate without the work, or a guaranteed promotion.</p>
+  </div>
+</div></section>
+
+<section class="sec mentor" id="mentor"><div class="wrap mentor-card">
+  <img src="slides/jalil.jpg" alt="Jalil Rahman" width="760" height="1142">
+  <div class="mentor-copy">
+    <span class="label">Your mentor · Jalil Rahman</span>
+    <p class="quote">“I teach the commercial language of fashion.”</p>
+    <p>23 years in senior commercial roles across luxury and premium fashion. Today a Chief Commercial Officer, responsible for the commercial strategy of a British fashion brand. The mentoring is the same feedback he gives his own teams.</p>
+    <div class="creds"><span>Richemont</span><span>Burberry</span><span>Vertu</span><span>Ozwald Boateng</span><span>Liberty London</span></div>
+    <div class="stats">
+      <div><b>23</b><span>years in fashion commercial</span></div>
+      <div><b>7</b><span>brands, luxury to mass market</span></div>
+      <div><b>CCO</b><span>sitting Chief Commercial Officer</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="inside-count" aria-label="Members"><div class="wrap">
+  <b>63</b><span>Fashion and luxury professionals already inside</span>
+</div></section>
+
+<section class="sec band"><div class="wrap">
+  <span class="label" style="color:var(--pop)">Applications reviewed on a rolling basis</span>
+  <h2>Become leadership-ready <em>in 12 weeks.</em></h2>
+  <p>Six short questions. Under two minutes.</p>
+  <a class="btn pop" href="#apply" data-apply>Apply to join HFRW <span aria-hidden="true">→</span></a>
+  <span class="fine">$49 a month · cancel any time</span>
+</div></section>
+
+<section class="sec" id="faq"><div class="wrap faq-grid">
+  <div class="sec-head"><span class="label">FAQs</span><h2 class="h2">Questions, <em>answered.</em></h2></div>
+  <div class="faq-list">
+    <details open><summary>How does the programme work?</summary><div class="a"><p>Twelve weeks, one topic a week. Each week you study real brands, analyse a commercial decision and complete a practical task you can submit for feedback. Weekly live seminars and personal mentoring sit alongside.</p></div></details>
+    <details><summary>Who is it for?</summary><div class="a"><p>People on the commercial side of fashion and luxury, from graduates to managers aiming for Head of or Director, plus designers and founders who want to make better business decisions.</p></div></details>
+    <details><summary>How much time do I need?</summary><div class="a"><p>Up to 3 hours a week. Mentoring is extra, so use as much or as little as you need.</p></div></details>
+    <details><summary>What does it cost?</summary><div class="a"><p>$49 a month on Skool. Cancel any time.</p></div></details>
+    <details><summary>Do I get direct access to Jalil?</summary><div class="a"><p>Yes. Mentoring is built in from day one. Use it for a programme task, a problem at work or your next career move.</p></div></details>
+    <details><summary>Do I need a finance background?</summary><div class="a"><p>No. Everything is built step by step from where most fashion professionals start.</p></div></details>
+    <details><summary>Will it get me promoted?</summary><div class="a"><p>It gives you the skills, the evidence and the confidence to go after it. It can't guarantee a promotion.</p></div></details>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 How Fashion Really Works</span><span>Hosted on Skool · $49 a month</span></div></footer>
+
+<div class="mcta" id="mcta"><a class="btn" href="#apply" data-apply>Apply to join HFRW →</a></div>
+
+<div class="overlay" id="overlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="close" id="closeBtn" aria-label="Close">×</button>
+    <div id="mBody"></div>
+  </div>
+</div>
+
+
+<script>
+
+/* ---------- EDIT THESE ---------- */
+var CONFIG = {
+  skoolUrl: "https://www.skool.com/how-fashion-really-works/about",
+  formEndpoint: "https://formspree.io/f/mqpedejg",        // optional: a Formspree (or similar) URL to receive applications
+  leadMagnetUrl: ""        // link to "The 10 Commercial Decisions" guide
+};
+/* -------------------------------- */
+
+var QUESTIONS = [
+  {k:"role", q:"What's your role?", o:["Buyer","Merchandiser","Product","Brand / Marketing","Ecommerce","Wholesale / Licensing","Retail / Store ops","Founder","Other"]},
+  {k:"years", q:"How long have you worked in fashion or luxury?", o:["Under 3 years","3–5 years","6–10 years","10+ years"]},
+  {k:"level", q:"What's your level?", o:["Assistant / Coordinator","Manager","Senior Manager","Head of or above"]},
+  {k:"goal", q:"What's your next step in the next 12–24 months?", o:["Head of","Director","Move into luxury","Launch or grow my own brand"]},
+  {k:"gap", q:"What's holding you back most?", o:["The numbers and P&L","Strategy","Presenting to executives","Getting noticed"]},
+  {k:"time", q:"Can you commit up to 3 hours a week for 12 weeks?", o:["Yes","Most weeks","Under 1 hour"]}
+];
+var answers = {}, step = 0;
+var overlay = document.getElementById("overlay"), body = document.getElementById("mBody");
+
+
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function bar(n){return '<div class="progress"><i style="width:'+Math.round(n/(QUESTIONS.length+1)*100)+'%"></i></div>';}
+
+function intro(){
+  body.innerHTML = '<span class="label">Application</span><h2 id="mTitle" style="font-size:2rem">Apply to join How Fashion Really Works</h2>'+
+  '<p class="lead" style="font-size:1rem">Six short questions on where you are and where you want to go, so we can check HFRW is right for you. Please answer honestly. It takes under two minutes.</p>'+
+  '<div><button class="btn" id="start">Start your application →</button></div>';
+  document.getElementById("start").onclick = function(){ step = 0; question(); };
+}
+function question(){
+  var Q = QUESTIONS[step];
+  body.innerHTML = bar(step+1)+'<span class="label">Question '+(step+1)+' of '+QUESTIONS.length+'</span><h3 id="mTitle">'+esc(Q.q)+'</h3>'+
+  '<div class="opts">'+Q.o.map(function(o,i){return '<button data-i="'+i+'">'+esc(o)+'</button>';}).join("")+'</div>'+
+  (step>0?'<div><button class="linkbtn" id="back">← Back</button></div>':'');
+  body.querySelectorAll(".opts button").forEach(function(b){
+    b.onclick = function(){ answers[Q.k] = Q.o[+b.dataset.i]; step++; step < QUESTIONS.length ? question() : contact(); };
+  });
+  var bk = document.getElementById("back"); if (bk) bk.onclick = function(){ step--; question(); };
+  var first = body.querySelector(".opts button"); if (first) first.focus();
+}
+function contact(){
+  body.innerHTML = bar(QUESTIONS.length+1)+'<span class="label">Final step</span><h3 id="mTitle">Your application is almost complete</h3>'+
+  '<form id="cform" novalidate><div class="fields">'+
+  '<label>First name<input id="f_first" required autocomplete="given-name"></label>'+
+  '<label>Last name<input id="f_last" required autocomplete="family-name"></label>'+
+  '<label class="full">Email address<input id="f_email" type="email" required autocomplete="email"></label>'+
+  '<label>Country<input id="f_country" required autocomplete="country-name"></label>'+
+  '<label>Current employer (optional)<input id="f_employer" autocomplete="organization"></label>'+
+  '<label class="full">LinkedIn profile (optional)<input id="f_linkedin" type="url"></label>'+
+  '</div><p class="err" id="ferr" hidden></p>'+
+  '<div class="row" style="margin-top:20px"><button type="button" class="linkbtn" id="back">← Back</button><button class="btn" type="submit">Submit my application</button></div></form>';
+  document.getElementById("back").onclick = function(){ step = QUESTIONS.length-1; question(); };
+  document.getElementById("cform").onsubmit = function(e){
+    e.preventDefault();
+    var g = function(id){return document.getElementById(id).value.trim();};
+    var err = document.getElementById("ferr");
+    if (!g("f_first") || !g("f_last") || !g("f_country") || !/^\S+@\S+\.\S+$/.test(g("f_email"))) {
+      err.textContent = "Please add your name, country and a valid email address."; err.hidden = false; return;
+    }
+    var data = {
+      "_subject": "HFRW application: " + g("f_first") + " " + g("f_last"),
+      "Name": g("f_first") + " " + g("f_last"), "email": g("f_email"), "Country": g("f_country"),
+      "Current employer": g("f_employer"), "LinkedIn": g("f_linkedin"),
+      "Role": answers.role, "Years in fashion": answers.years, "Level": answers.level,
+      "Next step": answers.goal, "Biggest gap": answers.gap, "Time commitment": answers.time,
+      "Fit": isFit(answers) ? "Strong fit" : "Not yet a fit"
+    };
+    if (CONFIG.formEndpoint) {
+      try { fetch(CONFIG.formEndpoint, {method:"POST", headers:{"Content-Type":"application/json","Accept":"application/json"}, body:JSON.stringify(data)}).catch(function(){}); } catch(x){}
+    }
+    result(Object.assign({}, answers, {first: g("f_first")}));
+  };
+}
+function isFit(a){ return a.time !== "Under 1 hour"; }
+function result(a){
+  if (isFit(a)) {
+    body.innerHTML = '<span class="label">Application received</span><h2 id="mTitle" style="font-size:2rem">You look like a strong fit, '+esc(a.first)+'.</h2>'+
+    '<p class="lead" style="font-size:1rem">Based on your answers, HFRW fits where you are and where you want to go. The final step is to join on Skool, where the programme, seminars and mentoring live.</p>'+
+    '<div><a class="btn" href="'+esc(CONFIG.skoolUrl)+'" target="_blank" rel="noopener">Complete my membership on Skool · $49 a month →</a></div>'+
+    '<p class="fine">Monthly membership. Cancel any time.</p>';
+  } else {
+    body.innerHTML = '<span class="label">Thank you</span><h2 id="mTitle" style="font-size:2rem">Thank you for applying, '+esc(a.first)+'.</h2>'+
+    '<p class="lead" style="font-size:1rem">HFRW works best when you can give it up to 3 hours a week. When you have the time, we would love to have you. In the meantime, start building commercial judgement with the free guide.</p>'+
+    (CONFIG.leadMagnetUrl ? '<div><a class="btn" href="'+esc(CONFIG.leadMagnetUrl)+'" target="_blank" rel="noopener">Get "The 10 Commercial Decisions" →</a></div>' : '')+
+    '<div><a class="linkbtn" href="'+esc(CONFIG.skoolUrl)+'" target="_blank" rel="noopener">Join on Skool anyway</a></div>';
+  }
+}
+var lastFocus = null;
+function open(e){ if (e) e.preventDefault(); lastFocus = document.activeElement; answers = {}; intro(); overlay.hidden = false; document.getElementById("start").focus(); }
+function close(){ overlay.hidden = true; if (lastFocus) lastFocus.focus(); }
+document.querySelectorAll("[data-apply]").forEach(function(a){ a.addEventListener("click", open); });
+document.getElementById("closeBtn").onclick = close;
+overlay.addEventListener("click", function(e){ if (e.target === overlay) close(); });
+document.addEventListener("keydown", function(e){ if (e.key === "Escape" && !overlay.hidden) close(); });
+
+
+/* sticky mobile apply bar appears after the hero */
+(function(){
+  var bar = document.getElementById("mcta"), hero = document.querySelector(".hero");
+  if (!("IntersectionObserver" in window)) { bar.classList.add("show"); return; }
+  new IntersectionObserver(function(e){ bar.classList.toggle("show", !e[0].isIntersecting); }).observe(hero);
+})();
+</script>
+</body>
+</html>
