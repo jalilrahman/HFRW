@@ -226,20 +226,6 @@ footer.site{background:var(--deep);color:var(--on-deep);border:0}
 footer.site .fine,footer.site.fine{color:color-mix(in srgb,var(--on-deep) 75%,transparent)}
 #mentor .mentor-copy .signature{font-family:var(--display);font-style:italic;font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.2;color:var(--hero);max-width:22ch;margin-top:-6px}
 
-/* inside the programme strip */
-.inside{padding-block:clamp(56px,7vw,96px);overflow:hidden}
-.inside .head{margin-bottom:36px}
-.inside h2 em{font-style:italic;color:var(--gold)}
-.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
-.track{display:flex;width:max-content;animation:hfrw-scroll 80s linear infinite}
-.marquee:hover .track,.marquee:focus-within .track{animation-play-state:paused}
-.slide{display:block;margin-right:20px;flex:none}
-.slide img{display:block;height:clamp(170px,22vw,290px);width:auto;max-width:none;aspect-ratio:16/9;box-shadow:0 18px 40px -22px rgba(11,19,48,.55);transition:transform .25s}
-.slide:hover img{transform:translateY(-4px)}
-@keyframes hfrw-scroll{to{transform:translateX(-50%)}}
-.brands{margin-top:32px;color:var(--ink-soft);font-size:.95rem;line-height:1.7}
-.brands b{color:var(--ink);font-weight:600}
-@media (prefers-reduced-motion: reduce){.marquee{overflow-x:auto}}
 /* week viewer */
 .weeks{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.35fr);gap:28px;align-items:start}
 .weeklist li{display:block;padding:0;border-bottom:1px solid var(--rule)}
@@ -340,44 +326,6 @@ footer.site .fine,footer.site.fine{color:color-mix(in srgb,var(--on-deep) 75%,tr
     <div class="tile"><span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="18" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="M10.6 7.1 6.4 15.9M13.4 7.1l4.2 8.8M7.5 18h9"/></svg></span><b>Live seminars + community</b><span>Weekly sessions with future fashion execs.</span></div>
   </div>
 </div></header>
-
-<section class="inside" id="inside">
-  <div class="wrap head">
-    <span class="label">Inside the programme</span>
-    <h2>Real brands. Real numbers. <em>Real decisions.</em></h2>
-    <p class="lead">A look at the slides members work through. Tap any slide to see which week it comes from.</p>
-  </div>
-  <div class="marquee">
-    <div class="track">
-      <a href="#programme" class="slide" data-i="0"><img src="slides/w01.jpg" alt="Week 1: The Fashion Business Foundations" width="1280" height="720" loading="lazy"></a>
-      <a href="#programme" class="slide" data-i="1"><img src="slides/w02.jpg" alt="Week 2: Understanding Why Customers Buy" width="1280" height="720" loading="lazy"></a>
-      <a href="#programme" class="slide" data-i="2"><img src="slides/w03.jpg" alt="Week 3: Positioning, Branding &amp; Competitive Advantage" width="1280" height="720" loading="lazy"></a>
-      <a href="#programme" class="slide" data-i="3"><img src="slides/w04.jpg" alt="Week 4: Product Strategy &amp; Commercial Creativity" width="1280" height="720" loading="lazy"></a>
-      <a href="#programme" class="slide" data-i="4"><img src="slides/w05.jpg" alt="Week 5: Retail, Wholesale &amp; Distribution" width="1280" height="720" loading="lazy"></a>
-      <a href="#programme" class="slide" data-i="5"><img src="slides/w06.jpg" alt="Week 6: Revenue Growth Beyond Product" width="1280" height="720" loading="lazy"></a>
-      <a href="#programme" class="slide" data-i="6"><img src="slides/w07.jpg" alt="Week 7: Commercial Literacy &amp; Financial Fluency" width="1280" height="720" loading="lazy"></a>
-      <a href="#programme" class="slide" data-i="7"><img src="slides/w08.jpg" alt="Week 8: Scaling Fashion Business" width="1280" height="720" loading="lazy"></a>
-      <a href="#programme" class="slide" data-i="8"><img src="slides/w09.jpg" alt="Week 9: Culture, Influence &amp; Relevance" width="1280" height="720" loading="lazy"></a>
-      <a href="#programme" class="slide" data-i="9"><img src="slides/w10.jpg" alt="Week 10: How Fashion Companies Actually Operate" width="1280" height="720" loading="lazy"></a>
-      <a href="#programme" class="slide" data-i="10"><img src="slides/w11.jpg" alt="Week 11: Career Paths in Fashion Business" width="1280" height="720" loading="lazy"></a>
-      <a href="#programme" class="slide" data-i="11"><img src="slides/w12.jpg" alt="Week 12: Thinking Like an Executive" width="1280" height="720" loading="lazy"></a>
-      <a href="#programme" class="slide" data-i="0" tabindex="-1" aria-hidden="true"><img src="slides/w01.jpg" alt="" width="1280" height="720" loading="lazy"></a>
-      <a href="#programme" class="slide" data-i="1" tabindex="-1" aria-hidden="true"><img src="slides/w02.jpg" alt="" width="1280" height="720" loading="lazy"></a>
-      <a href="#programme" class="slide" data-i="2" tabindex="-1" aria-hidden="true"><img src="slides/w03.jpg" alt="" width="1280" height="720" loading="lazy"></a>
-      <a href="#programme" class="slide" data-i="3" tabindex="-1" aria-hidden="true"><img src="slides/w04.jpg" alt="" width="1280" height="720" loading="lazy"></a>
-      <a href="#programme" class="slide" data-i="4" tabindex="-1" aria-hidden="true"><img src="slides/w05.jpg" alt="" width="1280" height="720" loading="lazy"></a>
-      <a href="#programme" class="slide" data-i="5" tabindex="-1" aria-hidden="true"><img src="slides/w06.jpg" alt="" width="1280" height="720" loading="lazy"></a>
-      <a href="#programme" class="slide" data-i="6" tabindex="-1" aria-hidden="true"><img src="slides/w07.jpg" alt="" width="1280" height="720" loading="lazy"></a>
-      <a href="#programme" class="slide" data-i="7" tabindex="-1" aria-hidden="true"><img src="slides/w08.jpg" alt="" width="1280" height="720" loading="lazy"></a>
-      <a href="#programme" class="slide" data-i="8" tabindex="-1" aria-hidden="true"><img src="slides/w09.jpg" alt="" width="1280" height="720" loading="lazy"></a>
-      <a href="#programme" class="slide" data-i="9" tabindex="-1" aria-hidden="true"><img src="slides/w10.jpg" alt="" width="1280" height="720" loading="lazy"></a>
-      <a href="#programme" class="slide" data-i="10" tabindex="-1" aria-hidden="true"><img src="slides/w11.jpg" alt="" width="1280" height="720" loading="lazy"></a>
-      <a href="#programme" class="slide" data-i="11" tabindex="-1" aria-hidden="true"><img src="slides/w12.jpg" alt="" width="1280" height="720" loading="lazy"></a>
-    </div>
-  </div>
-  <div class="wrap"><p class="brands">Case studies include <b>Louis Vuitton · Hermès · Chanel · Gucci · Burberry · Balenciaga · Rolex · Corteiz · Jacquemus · Thom Browne · Ralph Lauren · adidas</b></p></div>
-</section>
-
 
 <section class="thesis" id="who"><div class="wrap thesis-grid">
   <span class="label">Who it's for</span>
