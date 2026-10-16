@@ -458,12 +458,12 @@ var CONFIG = {
 /* -------------------------------- */
 
 var QUESTIONS = [
-  {k:"role", q:"What's your role?", o:["Buyer","Merchandiser","Product","Brand / Marketing","Ecommerce","Wholesale / Licensing","Retail / Store ops","Founder","Other"]},
-  {k:"years", q:"How long have you worked in fashion or luxury?", o:["Under 3 years","3–5 years","6–10 years","10+ years"]},
-  {k:"level", q:"What's your level?", o:["Assistant / Coordinator","Manager","Senior Manager","Head of or above"]},
-  {k:"goal", q:"What's your next step in the next 12–24 months?", o:["Head of","Director","Move into luxury","Launch or grow my own brand"]},
-  {k:"gap", q:"What's holding you back most?", o:["The numbers and P&L","Strategy","Presenting to executives","Getting noticed"]},
-  {k:"time", q:"Can you commit up to 3 hours a week for 12 weeks?", o:["Yes","Most weeks","Under 1 hour"]}
+  {k:"level", q:"Which best describes you right now?", o:["Student or graduate","Assistant or coordinator","Manager","Senior manager","Head of or above","Founder or business owner"]},
+  {k:"role", q:"Which area do you work in, or want to work in?", o:["Buying & merchandising","Product & design","Brand & marketing","Ecommerce & digital","Retail & wholesale","Licensing & partnerships","Other"]},
+  {k:"years", q:"How long have you worked in fashion or luxury?", o:["Not yet","Under 3 years","3–5 years","6–10 years","10+ years"]},
+  {k:"goal", q:"What do you most want HFRW to help you do in the next 12–24 months?", o:["Get my first role in fashion","Step up to Head of or Director","Move into luxury","Launch or grow my own brand","Understand the business I'm already in"]},
+  {k:"gap", q:"Where do you feel least confident today?", o:["The numbers (margin, pricing, P&L)","Strategy and positioning","Product and range decisions","Distribution and channels","Presenting to senior leaders","Not sure yet"]},
+  {k:"time", q:"Can you give up to 3 hours a week for 12 weeks?", o:["Yes, every week","Most weeks","Not right now"]}
 ];
 var answers = {}, step = 0;
 var overlay = document.getElementById("overlay"), body = document.getElementById("mBody");
@@ -512,8 +512,8 @@ function contact(){
       "_subject": "HFRW application: " + g("f_first") + " " + g("f_last"),
       "Name": g("f_first") + " " + g("f_last"), "email": g("f_email"), "Country": g("f_country"),
       "Current employer": g("f_employer"), "LinkedIn": g("f_linkedin"),
-      "Role": answers.role, "Years in fashion": answers.years, "Level": answers.level,
-      "Next step": answers.goal, "Biggest gap": answers.gap, "Time commitment": answers.time,
+      "Area": answers.role, "Years in fashion": answers.years, "Level": answers.level,
+      "Goal": answers.goal, "Least confident in": answers.gap, "Time commitment": answers.time,
       "Fit": isFit(answers) ? "Strong fit" : "Not yet a fit"
     };
     if (CONFIG.formEndpoint) {
@@ -522,7 +522,7 @@ function contact(){
     result(Object.assign({}, answers, {first: g("f_first")}));
   };
 }
-function isFit(a){ return a.time !== "Under 1 hour"; }
+function isFit(a){ return a.time !== "Not right now"; }
 function result(a){
   if (isFit(a)) {
     body.innerHTML = '<span class="label">Application received</span><h2 id="mTitle" style="font-size:2rem">You look like a strong fit, '+esc(a.first)+'.</h2>'+
