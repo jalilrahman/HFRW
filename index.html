@@ -287,6 +287,7 @@ footer.site .fine,footer.site.fine{color:color-mix(in srgb,var(--on-deep) 75%,tr
 .hero .promise{font-size:clamp(1.2rem,1.9vw,1.45rem);line-height:1.35;font-weight:600;max-width:34ch;color:var(--on-hero)}
 .hero .promise b{color:var(--pop);font-weight:700}
 .hero-copy>*:nth-child(5){animation-delay:.32s}
+.final .final-fine{color:color-mix(in srgb,var(--on-hero) 80%,transparent)}
 </style>
 </head>
 <body>
@@ -423,9 +424,9 @@ footer.site .fine,footer.site.fine{color:color-mix(in srgb,var(--on-deep) 75%,tr
     <details><summary>Is it recorded or live?</summary><div class="a"><p>Both. The weekly lessons and seminar library are recorded, so you can fit them around your job. The weekly live seminars and mentoring are where you ask questions and bring real problems.</p></div></details>
     <details><summary>Do I get direct access to Jalil?</summary><div class="a"><p>Yes. Mentoring is built in from day one. Use it for a programme task, a problem at work or your next career move.</p></div></details>
     <details><summary>Do I need a finance background?</summary><div class="a"><p>No. Everything is built step by step from where most fashion professionals start. You do need to do the exercises.</p></div></details>
-    <details><summary>Is this an MBA alternative?</summary><div class="a"><p>For fashion, yes. An MBA teaches general business over two years and costs tens of thousands. HFRW teaches the commercial decisions specific to fashion and luxury, from a working CCO, for $49 a month.</p></div></details>
+    <details><summary>Is this an MBA alternative?</summary><div class="a"><p>For fashion, yes. An MBA teaches general business over two years and costs tens of thousands. HFRW teaches the commercial decisions specific to fashion and luxury, from a working CCO, for a one-off fee of $250.</p></div></details>
     <details><summary>Will it get me promoted?</summary><div class="a"><p>It gives you the skills, the evidence and the confidence to go after a promotion. It can't guarantee one. That depends on your starting point, your effort and the openings around you.</p></div></details>
-    <details><summary>Can I start any time, and cancel?</summary><div class="a"><p>Yes. You can start the programme the day you join, and membership is monthly, so you can cancel any time.</p></div></details>
+    <details><summary>What does it cost, and what if I change my mind?</summary><div class="a"><p>It's a one-off fee of $250 for the full 12-week programme, with no monthly charges. You can start the day you join. If you change your mind, ask for a full refund within 48 hours of joining, no questions asked.</p></div></details>
   </div>
 </div></section>
 
@@ -434,11 +435,12 @@ footer.site .fine,footer.site.fine{color:color-mix(in srgb,var(--on-deep) 75%,tr
   <h2>Become leadership-ready <em>in 12 weeks.</em></h2>
   <p>Think critically. Decide better. Communicate with confidence.</p>
   <a class="btn" href="#apply" data-apply>Apply to join HFRW <span aria-hidden="true">→</span></a>
+  <span class="fine final-fine">$250 one-off for the full 12 weeks · 48-hour money-back guarantee</span>
 </div></section>
 
 <footer class="site"><div class="wrap fine">
   <span>© 2026 How Fashion Really Works</span>
-  <span>Hosted on Skool · $49 a month</span>
+  <span>Hosted on Skool · $250 one-off for the full 12 weeks</span>
 </div></footer>
 
 <div class="overlay" id="overlay" hidden>
@@ -527,8 +529,8 @@ function result(a){
   if (isFit(a)) {
     body.innerHTML = '<span class="label">Application received</span><h2 id="mTitle" style="font-size:2rem">You look like a strong fit, '+esc(a.first)+'.</h2>'+
     '<p class="lead" style="font-size:1rem">Based on your answers, HFRW fits where you are and where you want to go. The final step is to join on Skool, where the programme, seminars and mentoring live.</p>'+
-    '<div><a class="btn" href="'+esc(CONFIG.skoolUrl)+'" target="_blank" rel="noopener">Complete my membership on Skool · $49 a month →</a></div>'+
-    '<p class="fine">Monthly membership. Cancel any time.</p>';
+    '<div><a class="btn" href="'+esc(CONFIG.skoolUrl)+'" target="_blank" rel="noopener">Complete my membership on Skool · $250 →</a></div>'+
+    '<p class="fine">One-off fee for the full 12 weeks. 48-hour money-back guarantee.</p>';
   } else {
     body.innerHTML = '<span class="label">Thank you</span><h2 id="mTitle" style="font-size:2rem">Thank you for applying, '+esc(a.first)+'.</h2>'+
     '<p class="lead" style="font-size:1rem">HFRW works best when you can give it up to 3 hours a week. When you have the time, we would love to have you. In the meantime, start building commercial judgement with the free guide.</p>'+
